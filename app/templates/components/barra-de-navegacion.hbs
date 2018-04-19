@@ -1,0 +1,21 @@
+{{#if media.isMobile}}
+  {{#if sidebarVisible}}
+    <div class="bg-black-50 z-max fixed absolute--fill center" {{action "ocultarSidebar"}}>
+      <div class="ui fixed inverted vertical menu" style="bottom: 0" {{action "ocultarSidebar"}}>
+        {{suite-lista-de-rutas}}
+      </div>
+    </div>
+  {{/if}}
+
+  <a class="launch icon item" {{action 'mostrarSidebar'}}>
+    <i class="content icon"></i>
+  </a>
+
+{{else}}
+  {{#link-to "app.index" tagName="div" class="item logo-container" current-when="index"}}
+    <img class="ui fluid image" src="copa-tic_menu-logo.png" />
+  {{/link-to}}
+  {{lista-de-rutas}}
+{{/if}}
+
+{{yield}}

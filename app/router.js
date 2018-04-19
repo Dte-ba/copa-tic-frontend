@@ -7,6 +7,13 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('app', function() {
+    this.route('proyecto');
+    this.route('juego');
+    this.route('desafios');
+    this.route('tablero');
+    this.route('herramientas');
+  });
 });
 
 export default Router;

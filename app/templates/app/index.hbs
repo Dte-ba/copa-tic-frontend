@@ -1,0 +1,89 @@
+{{outlet}}
+<div class="ui vertical stripe segment">
+  <div class="ui container">
+    {{#swiper-container pagination=true grabCursor=true navigation=true}}
+        {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_01.jpg" />{{/swiper-slide}}
+        {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_02.jpg" />{{/swiper-slide}}
+        {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_03.jpg" />{{/swiper-slide}}
+      {{/swiper-container}}
+    </div>
+</div>
+<div class="ui vertical stripe padded segment">
+  <div class="ui center aligned container">
+    <h1 class="ui huge dividing header">
+      Resolvé los desafíos y ayudanos a llenar la #CopaTIC
+    </h1>
+    <div class="ui three huge statistics">
+      <div class="ui statistic">
+        <div class="value">
+          <i class="user circle icon"></i>
+          1800
+        </div>
+        <div class="label">
+          estudiantes secundarios
+        </div>
+      </div>
+      <div class="ui statistic">
+        <div class="value">
+          <i class="university icon"></i>
+          61
+        </div>
+        <div class="label">
+          escuelas
+        </div>
+      </div>
+      <div class="ui statistic">
+        <div class="value">
+          <i class="calendar icon"></i>
+          4
+        </div>
+        <div class="label">
+          semanas
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="ui vertical stripe padded segment">
+  <div class="ui container">
+    {{ctic-home-cards}}
+  </div>
+</div>
+<div class="ui vertical stripe segment">
+  <div class="ui container">
+    {{#g-map lat=-37.0317071 lng=-59.7663028 zoom=7 as |context|}}
+      {{#g-map-marker context lat=-37.0317071 lng=-59.7663028 as |markerContext|}}
+        {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+          <h2>Escuela Nº 123</h2>
+        {{/g-map-infowindow}}
+      {{/g-map-marker}}
+      {{#g-map-marker context lat=-36.5317071 lng=-61.7663028 as |markerContext|}}
+      {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+        <h2>Escuela Nº 61</h2>
+      {{/g-map-infowindow}}
+      {{/g-map-marker}}
+      {{#g-map-marker context lat=-37.6317071 lng=-61.9663028 as |markerContext|}}
+      {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+        <h2>Escuela Nº 327</h2>
+      {{/g-map-infowindow}}
+      {{/g-map-marker}}
+    {{/g-map}}
+  </div>
+</div>
+<div class="ui vertical stripe segment">
+  <div class="ui container">
+    {{#swiper-container pagination=true grabCursor=true navigation=true}}
+      {{#swiper-slide}}Slide 1{{/swiper-slide}}
+      {{#swiper-slide}}Slide 2{{/swiper-slide}}
+      {{#swiper-slide}}Slide 3{{/swiper-slide}}
+    {{/swiper-container}}
+  </div>
+</div>
+<div class="ui center aligned segment">
+  <h1 class="ui icon header">
+    <div class="content">
+      <img class="ui fluid image" src="copa-tic_logo.png" />
+    </div>
+    <i class="ui massive trophy icon"></i>
+  </h1>
+</div>

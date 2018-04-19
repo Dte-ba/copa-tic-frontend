@@ -1,0 +1,12 @@
+{{#if media.isDesktop}}
+  {{#link-to "app.index" class="item large screen only"}}
+    <img class="ui fluid image" src="copa-tic_menu-logo.png" />
+  {{/link-to}}
+{{/if}}
+{{#link-to 'app.proyecto' class="item"}}Proyecto{{/link-to}}
+{{#link-to 'app.juego' class="item"}}Juego{{/link-to}}
+{{#link-to 'app.desafios' class="item"}}Desafíos{{/link-to}}
+{{#link-to 'app.tablero' class="item"}}Tablero{{/link-to}}
+{{#link-to 'app.herramientas' class="item"}}Caja de herramientas{{/link-to}}
+<div class="item">Aula virtual</div>
+{{yield}}

@@ -1,0 +1,278 @@
+
+<div class="filters">
+
+  <div class="ui-group">
+    <h3>Acciones</h3>
+    <div class="ui buttons button-group js-radio-button-group" data-filter-group="acciones">
+      <button class="ui compact button is-checked" data-filter="">Todas</button>
+      <button class="ui compact button" data-filter=".crear">Crear</button>
+      <button class="ui compact button" data-filter=".programar">Programar</button>
+      <button class="ui compact button" data-filter=".redactar">Redactar</button>
+      <button class="ui compact button" data-filter=".colaborar">Colaborar</button>
+      <button class="ui compact button" data-filter=".georeferenciar">Georreferenciar</button>
+      <button class="ui compact button" data-filter=".almacenar">Almacenar</button>
+      <button class="ui compact button" data-filter=".gestionar">Gestionar</button>
+      <button class="ui compact button" data-filter=".publicar">Publicar</button>
+      <button class="ui compact button" data-filter=".compartir">Compartir</button>
+      <button class="ui compact button" data-filter=".disenar">Diseñar</button>
+      <button class="ui compact button" data-filter=".editar">Editar</button>
+      <button class="ui compact button" data-filter=".buscar">Buscar</button>
+      <button class="ui compact button" data-filter=".evaluar">Evaluar</button>
+      <button class="ui compact button" data-filter=".curar">Curar</button>
+      <button class="ui compact button" data-filter=".graficar">Graficar</button>
+      <button class="ui compact button" data-filter=".interactuar">Interactuar</button>
+    </div>
+  </div>
+
+  <div class="ui-group">
+    <h3>Recursos</h3>
+    <div class="ui buttons button-group js-radio-button-group" data-filter-group="recursos">
+      <button class="ui compact button is-checked" data-filter="">Todos</button>
+      <button class="ui compact button" data-filter=".simulaciones">Simulaciones</button>
+      <button class="ui compact button" data-filter=".juegos">Juegos</button>
+      <button class="ui compact button" data-filter=".documentos">Documentos</button>
+      <button class="ui compact button" data-filter=".mapas">Mapas</button>
+      <button class="ui compact button" data-filter=".multimedia">Multimedia</button>
+      <button class="ui compact button" data-filter=".informacion">Información</button>
+      <button class="ui compact button" data-filter=".rweb">Web</button>
+      <button class="ui compact button" data-filter=".imagenes">Imágenes</button>
+      <button class="ui compact button" data-filter=".audios">Audios</button>
+      <button class="ui compact button" data-filter=".videos">Videos</button>
+      <button class="ui compact button" data-filter=".presentaciones">Presentaciones</button>
+      <button class="ui compact button" data-filter=".infografias">Infografías</button>
+      <button class="ui compact button" data-filter=".cuestionarios">Cuestionarios</button>
+    </div>
+  </div>
+
+  <div class="ui-group">
+    <h3>Plataforma</h3>
+    <div class="ui buttons button-group js-radio-button-group" data-filter-group="plataformas">
+      <button class="ui compact button is-checked" data-filter="">Todas</button>
+      <button class="ui compact button" data-filter=".pweb">Web</button>
+      <button class="ui compact button" data-filter=".windows">Windows</button>
+      <button class="ui compact button" data-filter=".linux">Linux</button>
+      <button class="ui compact button" data-filter=".android">Android</button>
+    </div>
+  </div>
+
+</div>
+
+<div class="ui four column grid">
+  {{ctic-toolbox-card
+    titulo="Scratch"
+    descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula mi, tempus vitae tortor ut, eleifend venenatis sem. Etiam cursus elit sit amet velit mattis dictum."
+    acciones="crear programar"
+    recursos="simulaciones juegos"
+    plataformas="pweb linux windows"
+  }}
+  {{ctic-toolbox-card
+    titulo="Libre Office"
+    descripcion="Aenean malesuada auctor elit, at efficitur lorem tincidunt sit amet. Curabitur iaculis nulla sit amet tellus accumsan, ac convallis elit lobortis."
+    acciones="crear redactar"
+    recursos="documentos"
+    plataformas="linux windows"
+  }}
+  {{ctic-toolbox-card
+    titulo="Word"
+    descripcion="Suspendisse sed mauris eget libero suscipit pharetra nec ac tortor. Ut ut risus nec diam tempus consequat. Nullam ut tortor nibh."
+    acciones="crear redactar"
+    recursos="documentos"
+    plataformas="windows"
+  }}
+  {{ctic-toolbox-card
+    titulo="Google Docs"
+    descripcion="Pellentesque eleifend congue enim, et iaculis mauris aliquet id. Cras et elementum dui, ut convallis eros. Donec sit amet accumsan ligula."
+    acciones="crear colaborar"
+    recursos="documentos"
+    plataformas="pweb"
+  }}
+  {{ctic-toolbox-card
+    titulo="Google Maps"
+    descripcion="Donec accumsan arcu et arcu sagittis, quis efficitur purus sollicitudin. In tempor volutpat aliquam. Nullam quis condimentum quam. Nam finibus ultrices tempus."
+    acciones="crear georeferenciar"
+    recursos="mapas"
+    plataformas="pweb android"
+  }}
+  {{ctic-toolbox-card
+    titulo="Google Drive"
+    descripcion="Servicio de alojamiento de archivos en la nube que permite almacenar, editar, sincronizar automáticamente en todos nuestros dispositivos y compartir todo tipo de documentos."
+    acciones="almacenar gestionar colaborar publicar compartir"
+    recursos="multimedia informacion"
+    plataformas="pweb android"
+  }}
+  {{ctic-toolbox-card
+    titulo="Dropbox"
+    descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula mi, tempus vitae tortor ut, eleifend venenatis sem. Etiam cursus elit sit amet velit mattis dictum."
+    acciones="almacenar gestionar colaborar publicar compartir"
+    recursos="multimedia informacion"
+    plataformas="pweb android"
+  }}
+  {{ctic-toolbox-card
+    titulo="Blogger"
+    descripcion="Pellentesque eleifend congue enim, et iaculis mauris aliquet id. Cras et elementum dui, ut convallis eros. Donec sit amet accumsan ligula."
+    acciones="crear publicar compartir"
+    recursos="rweb multimedia"
+    plataformas="pweb"
+  }}
+  {{ctic-toolbox-card
+    titulo="Wordpress"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="crear publicar compartir"
+    recursos="rweb multimedia"
+    plataformas="pweb"
+  }}
+  {{ctic-toolbox-card
+    titulo="Wix"
+    descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula mi, tempus vitae tortor ut, eleifend venenatis sem. Etiam cursus elit sit amet velit mattis dictum."
+    acciones="crear publicar compartir"
+    recursos="rweb multimedia"
+    plataformas="pweb"
+  }}
+  {{ctic-toolbox-card
+    titulo="Canva"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="crear disenar editar"
+    recursos="imagenes"
+    plataformas=""
+  }}
+  {{ctic-toolbox-card
+    titulo="GIMP"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="crear disenar editar"
+    recursos="imagenes"
+    plataformas=""
+  }}
+  {{ctic-toolbox-card
+    titulo="Audacity"
+    descripcion="Donec accumsan arcu et arcu sagittis, quis efficitur purus sollicitudin. In tempor volutpat aliquam. Nullam quis condimentum quam. Nam finibus ultrices tempus."
+    acciones="crear editar"
+    recursos="audios"
+    plataformas="linux windows"
+  }}
+  {{ctic-toolbox-card
+    titulo="YouTube"
+    descripcion="Pellentesque eleifend congue enim, et iaculis mauris aliquet id. Cras et elementum dui, ut convallis eros. Donec sit amet accumsan ligula."
+    acciones="crear editar almacenar publicar compartir"
+    recursos="videos"
+    plataformas="pweb android"
+  }}
+  {{ctic-toolbox-card
+    titulo="Google Sites"
+    descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula mi, tempus vitae tortor ut, eleifend venenatis sem. Etiam cursus elit sit amet velit mattis dictum."
+    acciones="crear publicar compartir"
+    recursos="rweb multimedia"
+    plataformas="pweb"
+  }}
+  {{ctic-toolbox-card
+    titulo="Google Slides"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="crear presentar publicar"
+    recursos="presentaciones multimedia"
+    plataformas=""
+  }}
+  {{ctic-toolbox-card
+    titulo="Google Forms"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="crear evaluar"
+    recursos="cuestionarios"
+    plataformas="pweb"
+  }}
+  {{ctic-toolbox-card
+    titulo="Google Search"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="buscar gestionar"
+    recursos="informacion"
+    plataformas="pweb android"
+  }}
+  {{ctic-toolbox-card
+    titulo="Duck Duck Go"
+    descripcion="Pellentesque eleifend congue enim, et iaculis mauris aliquet id. Cras et elementum dui, ut convallis eros. Donec sit amet accumsan ligula."
+    acciones="buscar gestionar"
+    recursos="informacion"
+    plataformas="pweb"
+  }}
+  {{ctic-toolbox-card
+    titulo="Soundcloud"
+    descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula mi, tempus vitae tortor ut, eleifend venenatis sem. Etiam cursus elit sit amet velit mattis dictum."
+    acciones="almacenar publicar"
+    recursos="audios"
+    plataformas="pweb"
+  }}
+  {{ctic-toolbox-card
+    titulo="Movie Maker"
+    descripcion="Donec accumsan arcu et arcu sagittis, quis efficitur purus sollicitudin. In tempor volutpat aliquam. Nullam quis condimentum quam. Nam finibus ultrices tempus."
+    acciones="crear editar"
+    recursos="videos"
+    plataformas="windows"
+  }}
+  {{ctic-toolbox-card
+    titulo="Caripela"
+    descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ligula mi, tempus vitae tortor ut, eleifend venenatis sem. Etiam cursus elit sit amet velit mattis dictum."
+    acciones="crear editar"
+    recursos="imagenes"
+    plataformas="linux"
+  }}
+  {{ctic-toolbox-card
+    titulo="Prezi"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="crear publicar compartir"
+    recursos="presentaciones multimedia"
+    plataformas=""
+  }}
+  {{ctic-toolbox-card
+    titulo="Pinterest"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="curar gestionar"
+    recursos="imagenes"
+    plataformas="pweb android"
+  }}
+  {{ctic-toolbox-card
+    titulo="Pocket"
+    descripcion="Pellentesque eleifend congue enim, et iaculis mauris aliquet id. Cras et elementum dui, ut convallis eros. Donec sit amet accumsan ligula."
+    acciones="curar gestionar"
+    recursos="informacion"
+    plataformas=""
+  }}
+  {{ctic-toolbox-card
+    titulo="MIT App Inventor"
+    descripcion="Donec accumsan arcu et arcu sagittis, quis efficitur purus sollicitudin. In tempor volutpat aliquam. Nullam quis condimentum quam. Nam finibus ultrices tempus."
+    acciones="crear programar"
+    recursos="aplicaciones juegos"
+    plataformas=""
+  }}
+  {{ctic-toolbox-card
+    titulo="Piktochart"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="crear graficar"
+    recursos="infografias informacion"
+    plataformas=""
+  }}
+  {{ctic-toolbox-card
+    titulo="Infogram"
+    descripcion="Etiam ut mauris a libero euismod fringilla nec ac sapien. Curabitur maximus nisl sed turpis ultricies, eu dictum eros suscipit. "
+    acciones="crear graficar"
+    recursos="infografias informacion"
+    plataformas=""
+  }}
+  {{ctic-toolbox-card
+    titulo="Facebook"
+    descripcion="Maecenas dignissim libero eu libero convallis malesuada. Aliquam vitae molestie enim."
+    acciones="interactuar publicar"
+    recursos="multimedia"
+    plataformas="pweb android"
+  }}
+  {{ctic-toolbox-card
+    titulo="Twitter"
+    descripcion="Maecenas dignissim libero eu libero convallis malesuada. Aliquam vitae molestie enim."
+    acciones="interactuar publicar"
+    recursos="multimedia"
+    plataformas="pweb android"
+  }}
+  {{ctic-toolbox-card
+    titulo="Instagram"
+    descripcion="Donec accumsan arcu et arcu sagittis, quis efficitur purus sollicitudin. In tempor volutpat aliquam. Nullam quis condimentum quam. Nam finibus ultrices tempus."
+    acciones="interactuar publicar"
+    recursos="multimedia"
+    plataformas="pweb android"
+  }}
+</div>

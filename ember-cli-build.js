@@ -4,12 +4,9 @@
 const EmberApp = require("ember-cli/lib/broccoli/ember-app");
 
 module.exports = function(defaults) {
-  let app = new EmberApp(
-    defaults,
-    {
-      // Add options here
-    }
-  );
+  let app = new EmberApp(defaults, {
+    // Add options here
+  });
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
@@ -26,6 +23,7 @@ module.exports = function(defaults) {
 
   app.import("vendor/isotope.pkgd.min.js");
   app.import("vendor/imagesloaded.pkgd.min.js");
+  app.import("vendor/Affogato-Webfont/affogato.css");
 
   return app.toTree();
 };

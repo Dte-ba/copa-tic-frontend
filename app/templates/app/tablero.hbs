@@ -6,3 +6,24 @@
     </h1>
   </div>
 </div>
+<div class="ui vertical stripe segment">
+  <div class="ui container">
+    {{#g-map lat=-37.0317071 lng=-59.7663028 zoom=7 as |context|}}
+      {{#g-map-marker context lat=-37.0317071 lng=-59.7663028 as |markerContext|}}
+        {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+          <h2>Escuela Nº 123</h2>
+        {{/g-map-infowindow}}
+      {{/g-map-marker}}
+      {{#g-map-marker context lat=-36.5317071 lng=-61.7663028 as |markerContext|}}
+      {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+        <h2>Escuela Nº 61</h2>
+      {{/g-map-infowindow}}
+      {{/g-map-marker}}
+      {{#g-map-marker context lat=-37.6317071 lng=-61.9663028 as |markerContext|}}
+      {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+        <h2>Escuela Nº 327</h2>
+      {{/g-map-infowindow}}
+      {{/g-map-marker}}
+    {{/g-map}}
+  </div>
+</div>

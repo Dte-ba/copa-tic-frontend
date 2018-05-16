@@ -44,6 +44,10 @@ body {
   font-weight: normal;
 }
 
+.infowindow-segment {
+  min-width: 500px;
+}
+
 /* Menu */
 
 .ui.menu {

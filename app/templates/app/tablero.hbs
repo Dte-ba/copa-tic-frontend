@@ -8,21 +8,36 @@
 </div>
 <div class="ui vertical stripe segment">
   <div class="ui container">
-    {{#g-map lat=-37.0317071 lng=-59.7663028 zoom=7 as |context|}}
-      {{#g-map-marker context lat=-37.0317071 lng=-59.7663028 as |markerContext|}}
+    {{#g-map lat=-37.0317071 lng=-59.7663028 zoom=7 as |context|}},
+      {{#g-map-marker context lat=-34.922162 lng=-57.956888 as |markerContext|}}
         {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
-          <h2>Escuela Nº 123</h2>
+          <div class="ui segment infowindow-segment">
+            <h2 class="ui header">
+              Escuela Secundaria Nº32
+              <div class="ui sub header">La Plata</div>
+            </h2>
+            <div class="ui equal width grid">
+              <div class="column">
+                <span class="meta">Equipo 1</span>
+                <h5 class="ui header">
+                  DT Laura Edith Martínez
+                </h5>
+                <h4 class="ui header">
+                  Les Maradó
+                </h4>
+              </div>
+              <div class="column">
+                <span class="meta">Equipo 2</span>
+                <h5 class="ui header">
+                  DT Juan Manuel Rodríguez
+                </h5>
+                <h4 class="ui header">
+                  Les Pantarayos
+                </h4>
+              </div>
+            </div>
+          </div>
         {{/g-map-infowindow}}
-      {{/g-map-marker}}
-      {{#g-map-marker context lat=-36.5317071 lng=-61.7663028 as |markerContext|}}
-      {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
-        <h2>Escuela Nº 61</h2>
-      {{/g-map-infowindow}}
-      {{/g-map-marker}}
-      {{#g-map-marker context lat=-37.6317071 lng=-61.9663028 as |markerContext|}}
-      {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
-        <h2>Escuela Nº 327</h2>
-      {{/g-map-infowindow}}
       {{/g-map-marker}}
     {{/g-map}}
   </div>

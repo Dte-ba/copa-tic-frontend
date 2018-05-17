@@ -1,10 +1,75 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
+
 /* Global */
+* {
+  font-size: 1.38em;
+}
 
 body {
   font-family: "Affogato", sans-serif;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 40px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* colores */
+
+.white {
+  color: #ffffff !important;
+}
+
+.azul {
+  color: #1b2647 !important;
+}
+
+.celeste {
+  color: #009cde;
+}
+
+.fuccia {
+  color: #d70046 !important;
+}
+
+/* Fonts */
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif !important;
+  font-style: italic !important;
+  font-weight: normal !important;
+  font-size: inherit;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 200 !important;
+  font-size: inherit;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 600 !important;
+  font-size: inherit;
+}
+
 /* General */
+
+.resumen {
+  font-style: italic;
+  font-weight: 200;
+  font-size: 1.8rem;
+  text-align: justify;
+  line-height: 38px;
+}
+
 .ctic-container {
   margin-top: 3.5em;
 }
@@ -101,9 +166,9 @@ body {
   padding: 5rem;
 }
 
-.home-resolve .ui.red.statistics .statistic > .value,
-.home-resolve .ui.statistics .red.statistic > .value,
-.home-resolve .ui.red.statistic > .value {
+.home-resolve .ui.blue.statistics .statistic > .value,
+.home-resolve .ui.statistics .blue.statistic > .value,
+.home-resolve .ui.blue.statistic > .value {
   font-family: "Affogato-Black";
 }
 
@@ -113,11 +178,11 @@ body {
   font-size: 2rem;
 }
 
-.home-resolve .ui.red.statistics .statistic > .value,
-.home-resolve .ui.statistics .red.statistic > .value,
-.home-resolve .ui.red.statistic > .value,
+.home-resolve .ui.blue.statistics .statistic > .value,
+.home-resolve .ui.statistics .blue.statistic > .value,
+.home-resolve .ui.blue.statistic > .value,
 .home-resolve .ui.statistics .statistic > .label {
-  color: #e1033c;
+  color: #1b2647;
 }
 
 .home-resolve h1.ui.header {
@@ -200,4 +265,9 @@ body {
 .ui-group .button-group {
   display: inline-block;
   margin-right: 20px;
+}
+
+/* Footer */
+.ui.inverted.vertical.footer.segment {
+  margin-top: 5em;
 }

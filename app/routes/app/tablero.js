@@ -14,7 +14,7 @@ export default Ember.Route.extend({
   }).drop(),
 
   escuelas: task(function*() {
-    let url = "http://" + ENV.API_URL + "/api/escuelas?page_size=100";
+    let url = ENV.API_URL + "/api/escuelas?page_size=100";
     let resultado = yield this.get("ajax").request(url);
     return resultado;
   }).drop(),

@@ -13,6 +13,51 @@ export default Ember.Component.extend({
     // store filter for each group
     var filters = {};
 
+    Ember.$(".filters").on("click", "#acciones", function() {
+      Ember.$("#acciones").addClass("active");
+      Ember.$("#recursos").removeClass("active");
+      Ember.$("#plataformas").removeClass("active");
+      Ember.$("#grupo-acciones")
+        .removeClass("grupo-oculto")
+        .addClass("grupo-visible");
+      Ember.$("#grupo-recursos")
+        .removeClass("grupo-visible")
+        .addClass("grupo-oculto");
+      Ember.$("#grupo-plataformas")
+        .removeClass("grupo-visible")
+        .addClass("grupo-oculto");
+    });
+
+    Ember.$(".filters").on("click", "#recursos", function() {
+      Ember.$("#recursos").addClass("active");
+      Ember.$("#acciones").removeClass("active");
+      Ember.$("#plataformas").removeClass("active");
+      Ember.$("#grupo-recursos")
+        .removeClass("grupo-oculto")
+        .addClass("grupo-visible");
+      Ember.$("#grupo-acciones")
+        .removeClass("grupo-visible")
+        .addClass("grupo-oculto");
+      Ember.$("#grupo-plataformas")
+        .removeClass("grupo-visible")
+        .addClass("grupo-oculto");
+    });
+
+    Ember.$(".filters").on("click", "#plataformas", function() {
+      Ember.$("#plataformas").addClass("active");
+      Ember.$("#acciones").removeClass("active");
+      Ember.$("#recursos").removeClass("active");
+      Ember.$("#grupo-plataformas")
+        .removeClass("grupo-oculto")
+        .addClass("grupo-visible");
+      Ember.$("#grupo-acciones")
+        .removeClass("grupo-visible")
+        .addClass("grupo-oculto");
+      Ember.$("#grupo-recursos")
+        .removeClass("grupo-visible")
+        .addClass("grupo-oculto");
+    });
+
     Ember.$(".filters").on("click", ".button", function() {
       var $this = $(this);
       // get group key

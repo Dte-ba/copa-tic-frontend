@@ -21,6 +21,12 @@ p {
   text-align: center;
 }
 
+.grupo-oculto {
+  display: none !important;
+}
+.grupo-visible {
+  display: inline-block !important;
+}
 /* colores */
 
 .white {
@@ -220,25 +226,32 @@ p {
 .ui.buttons > .ui.button {
   margin: 5px;
 }
+.ui.buttons .button:first-child {
+  border-radius: 0 !important;
+}
+.ui.buttons .button:last-child {
+  border-radius: 0 !important;
+}
+.ui.button {
+  color: #1c1f4c;
+  background-color: #fff;
+}
 
 .ui.button:hover {
-  background-color: #8cf;
-  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
-  color: #222;
+  background-color: #1c1f4c;
+  color: #fff;
 }
 
 .ui.button:active,
 .ui.button.is-checked {
-  background-color: #28f;
+  color: white;
+  background-color: #1c1f4c;
 }
 
 .ui.button.is-checked {
-  color: white;
-  text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8);
 }
 
 .ui.button:active {
-  box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8);
 }
 
 /* clear fix */
@@ -265,6 +278,31 @@ p {
 .ui-group .button-group {
   display: inline-block;
   margin-right: 20px;
+}
+
+/* Tabular Menu */
+.ui.top.attached.menu > .item:first-child {
+  border-radius: 0 !important;
+}
+.ui.tabular.menu {
+  border-bottom: 1px solid #1c1f4c;
+}
+.ui.tabular.menu .item {
+  color: white;
+  background-color: #1c1f4c;
+  margin-right: 10px;
+}
+.ui.tabular.menu .active.item {
+  color: #1c1f4c;
+  background-color: #fff;
+  border-radius: 0 !important;
+  border-color: #1c1f4c;
+  border-bottom: 1px solid #1c1f4c;
+}
+
+.isotope-grid {
+  border-radius: 0 !important;
+  border-color: #1c1f4c !important;
 }
 
 /* Footer */

@@ -10,9 +10,18 @@ module.exports = function(environment) {
     contentSecurityPolicy: {
       "connect-src":
         "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
-      "style-src": "'self' 'unsafe-inline'",
-      "script-src": "'self'",
-      "frame-src": "'self'"
+      "style-src":
+        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+      "script-src":
+        "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+      "frame-src":
+        "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+      "font-src":
+        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+      "media-src":
+        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+      "img-src":
+        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'"
     },
 
     EmberENV: {

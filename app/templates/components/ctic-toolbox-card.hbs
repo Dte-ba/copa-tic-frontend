@@ -2,11 +2,25 @@
   <div class="ui fluid card">
     <div class="content">
       <div class="header">
-        {{titulo}}
+        <a href="{{link}}" target="_blank" title="{{titulo}}">
+          <i class="ui {{icono}} icon"></i> {{titulo}}
+        </a>
+        <div class="sub header">
+          {{acciones}}
+        </div>
       </div>
+    </div>
+    <div class="content">
       <div class="description">
         {{descripcion}}
       </div>
+    </div>
+    <div class="content">
+      <span class="meta">Recursos: {{recursos}}</span>
+      <span class="meta">Entorno: {{plataformas}}</span>
+    </div>
+    <div class="extra content">
+      <a href="{{guia}}" target="_blank" title="Guía de uso de {{titulo}}">Guía de uso</a>
     </div>
   </div>
 </div>

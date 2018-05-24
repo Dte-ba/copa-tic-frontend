@@ -46,8 +46,8 @@ module.exports = function(environment) {
     key: "AIzaSyA7X7s7nDGTf4LicQh4vU-KZP3ptWGp1e0"
   };
 
-  const default_api_url = "localhost:8000";
-  ENV.API_URL = "localhost:8000";
+  const default_api_url = "http://localhost:8000";
+  ENV.API_URL = "http://localhost:8000";
 
   if (environment === "development") {
     // ENV.APP.LOG_RESOLVER = true;

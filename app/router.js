@@ -19,7 +19,10 @@ Router.map(function() {
     this.route("proyecto");
     this.route("juego");
     this.route("desafios");
-    this.route("tablero");
+    this.route("tablero", function() {
+      this.route("index");
+      this.route("escuela", { path: "escuela/:escuela_id" });
+    });
     this.route("herramientas");
   });
 });

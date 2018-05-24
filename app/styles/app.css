@@ -45,6 +45,22 @@ p {
   color: #d70046 !important;
 }
 
+.bg.azul {
+  background-color: #1b2647 !important;
+}
+
+.bg.verde {
+  background-color: #a4c136 !important;
+}
+
+.bg.celeste {
+  background-color: #009cde !important;
+}
+
+.bg.fuccia {
+  background-color: #d70046 !important;
+}
+
 /* Fonts */
 
 .roboto-medium-italic {

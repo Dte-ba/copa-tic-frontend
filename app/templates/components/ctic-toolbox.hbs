@@ -1,310 +1,316 @@
-
-<div class="filters">
-  <div class="ui top attached tabular menu">
-    <a class="active item" id="acciones">
-      ¿QUÉ QUERES HACER? <i class="ui angle down icon"></i>
-    </a>
-    <a class="item" id="recursos">
-      ¿QUÉ RECURSO QUERÉS CREAR? <i class="ui angle down icon"></i>
-    </a>
-    <a class="item" id="plataformas">
-      ¿EN QUÉ ENTORNO? <i class="ui angle down icon"></i>
-    </a>
-  </div>
-  <div class="ui bottom attached segment isotope-grid">
-    <!-- Acciones -->
-    <div class="ui-group grupo-visible" id="grupo-acciones">
-      <div class="ui buttons button-group js-radio-button-group" data-filter-group="acciones">
-        <button class="ui compact button is-checked" data-filter="">Todas</button>
-        <button class="ui compact button" data-filter=".crear">Crear</button>
-        <button class="ui compact button" data-filter=".programar">Programar</button>
-        <button class="ui compact button" data-filter=".redactar">Redactar</button>
-        <button class="ui compact button" data-filter=".colaborar">Colaborar</button>
-        <button class="ui compact button" data-filter=".georeferenciar">Georreferenciar</button>
-        <button class="ui compact button" data-filter=".almacenar">Almacenar</button>
-        <button class="ui compact button" data-filter=".gestionar">Gestionar</button>
-        <button class="ui compact button" data-filter=".publicar">Publicar</button>
-        <button class="ui compact button" data-filter=".compartir">Compartir</button>
-        <button class="ui compact button" data-filter=".disenar">Diseñar</button>
-        <button class="ui compact button" data-filter=".editar">Editar</button>
-        <button class="ui compact button" data-filter=".buscar">Buscar</button>
-        <button class="ui compact button" data-filter=".evaluar">Evaluar</button>
-        <button class="ui compact button" data-filter=".curar">Curar</button>
-        <button class="ui compact button" data-filter=".graficar">Graficar</button>
-        <button class="ui compact button" data-filter=".interactuar">Interactuar</button>
+<div class="ui vertical stripe padded segment">
+  <div class="ui container">
+    <div class="filters">
+      <div class="ui top attached tabular menu">
+        <a class="active item" id="acciones">
+          ¿QUÉ QUERES HACER? <i class="ui angle down icon"></i>
+        </a>
+        <a class="item" id="recursos">
+          ¿QUÉ RECURSO QUERÉS CREAR? <i class="ui angle down icon"></i>
+        </a>
+        <a class="item" id="plataformas">
+          ¿EN QUÉ ENTORNO? <i class="ui angle down icon"></i>
+        </a>
       </div>
-    </div>
-    <!-- Recursos -->
-    <div class="ui-group grupo-oculto" id="grupo-recursos">
-      <div class="ui buttons button-group js-radio-button-group" data-filter-group="recursos">
-        <button class="ui compact button is-checked" data-filter="">Todos</button>
-        <button class="ui compact button" data-filter=".simulaciones">Simulaciones</button>
-        <button class="ui compact button" data-filter=".juegos">Juegos</button>
-        <button class="ui compact button" data-filter=".documentos">Documentos</button>
-        <button class="ui compact button" data-filter=".mapas">Mapas</button>
-        <button class="ui compact button" data-filter=".multimedia">Multimedia</button>
-        <button class="ui compact button" data-filter=".informacion">Información</button>
-        <button class="ui compact button" data-filter=".rweb">Web</button>
-        <button class="ui compact button" data-filter=".imagenes">Imágenes</button>
-        <button class="ui compact button" data-filter=".audios">Audios</button>
-        <button class="ui compact button" data-filter=".videos">Videos</button>
-        <button class="ui compact button" data-filter=".presentaciones">Presentaciones</button>
-        <button class="ui compact button" data-filter=".infografias">Infografías</button>
-        <button class="ui compact button" data-filter=".cuestionarios">Cuestionarios</button>
-      </div>
-    </div>
-    <!-- Plataforma -->
-    <div class="ui-group grupo-oculto" id="grupo-plataformas">
-      <div class="ui buttons button-group js-radio-button-group" data-filter-group="plataformas">
-        <button class="ui compact button is-checked" data-filter="">Todas</button>
-        <button class="ui compact button" data-filter=".pweb">Web</button>
-        <button class="ui compact button" data-filter=".windows">Windows</button>
-        <button class="ui compact button" data-filter=".linux">Linux</button>
-        <button class="ui compact button" data-filter=".android">Android</button>
+      <div class="ui bottom attached segment isotope-grid">
+        <!-- Acciones -->
+        <div class="ui-group grupo-visible" id="grupo-acciones">
+          <div class="ui buttons button-group js-radio-button-group" data-filter-group="acciones">
+            <button class="ui compact button is-checked" data-filter="">Todas</button>
+            <button class="ui compact button" data-filter=".crear">Crear</button>
+            <button class="ui compact button" data-filter=".programar">Programar</button>
+            <button class="ui compact button" data-filter=".redactar">Redactar</button>
+            <button class="ui compact button" data-filter=".colaborar">Colaborar</button>
+            <button class="ui compact button" data-filter=".georeferenciar">Georreferenciar</button>
+            <button class="ui compact button" data-filter=".almacenar">Almacenar</button>
+            <button class="ui compact button" data-filter=".gestionar">Gestionar</button>
+            <button class="ui compact button" data-filter=".publicar">Publicar</button>
+            <button class="ui compact button" data-filter=".compartir">Compartir</button>
+            <button class="ui compact button" data-filter=".disenar">Diseñar</button>
+            <button class="ui compact button" data-filter=".editar">Editar</button>
+            <button class="ui compact button" data-filter=".buscar">Buscar</button>
+            <button class="ui compact button" data-filter=".evaluar">Evaluar</button>
+            <button class="ui compact button" data-filter=".curar">Curar</button>
+            <button class="ui compact button" data-filter=".graficar">Graficar</button>
+            <button class="ui compact button" data-filter=".interactuar">Interactuar</button>
+          </div>
+        </div>
+        <!-- Recursos -->
+        <div class="ui-group grupo-oculto" id="grupo-recursos">
+          <div class="ui buttons button-group js-radio-button-group" data-filter-group="recursos">
+            <button class="ui compact button is-checked" data-filter="">Todos</button>
+            <button class="ui compact button" data-filter=".simulaciones">Simulaciones</button>
+            <button class="ui compact button" data-filter=".juegos">Juegos</button>
+            <button class="ui compact button" data-filter=".documentos">Documentos</button>
+            <button class="ui compact button" data-filter=".mapas">Mapas</button>
+            <button class="ui compact button" data-filter=".multimedia">Multimedia</button>
+            <button class="ui compact button" data-filter=".informacion">Información</button>
+            <button class="ui compact button" data-filter=".rweb">Web</button>
+            <button class="ui compact button" data-filter=".imagenes">Imágenes</button>
+            <button class="ui compact button" data-filter=".audios">Audios</button>
+            <button class="ui compact button" data-filter=".videos">Videos</button>
+            <button class="ui compact button" data-filter=".presentaciones">Presentaciones</button>
+            <button class="ui compact button" data-filter=".infografias">Infografías</button>
+            <button class="ui compact button" data-filter=".cuestionarios">Cuestionarios</button>
+          </div>
+        </div>
+        <!-- Plataforma -->
+        <div class="ui-group grupo-oculto" id="grupo-plataformas">
+          <div class="ui buttons button-group js-radio-button-group" data-filter-group="plataformas">
+            <button class="ui compact button is-checked" data-filter="">Todas</button>
+            <button class="ui compact button" data-filter=".pweb">Web</button>
+            <button class="ui compact button" data-filter=".windows">Windows</button>
+            <button class="ui compact button" data-filter=".linux">Linux</button>
+            <button class="ui compact button" data-filter=".android">Android</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
-<br>
-<div class="ui four column grid">
-  {{ctic-toolbox-card
-    titulo="Scratch"
-    descripcion="Lenguaje de programación creado por el MIT que sirve para crear historias interactivas, juegos y animaciones que pueden ser compartidas con otras personas vía Web."
-    acciones="crear programar"
-    recursos="simulaciones juegos"
-    plataformas="pweb linux windows"
-    guia="http://eduteka.icesi.edu.co/pdfdir/ScratchGuiaReferencia.pdf"
-    link="https://scratch.mit.edu/"
-    icono="scratch"
-  }}
-  {{ctic-toolbox-card
-    titulo="Google Drive"
-    descripcion="Servicio de alojamiento de archivos en la nube que permite crear, almacenar, editar, sincronizar en diversos dispositivos y compartir todo tipo de documentos."
-    acciones="crear almacenar gestionar publicar compartir"
-    recursos="documentos multimedia informacion"
-    plataformas="pweb windows linux android"
-    guia="https://support.google.com/drive/answer/2424384?co=GENIE.Platform%3DDesktop&hl=es"
-    link="https://www.google.com/drive/"
-    icono="google drive"
-  }}
-  {{ctic-toolbox-card
-    titulo="Blogger"
-    descripcion="Servicio que permite crear y publicar blogs o bitácoras en línea de manera fácil y gratuita."
-    acciones="crear publicar compartir"
-    recursos="rweb multimedia"
-    plataformas="pweb"
-    guia="https://support.google.com/blogger/?hl=es#topic=3339243"
-    link="https://www.blogger.com/"
-    icono="blogger"
-  }}
-  {{ctic-toolbox-card
-    titulo="Wordpress"
-    descripcion="Sistema de gestión de contenidos o CMS gratuito y de código abierto que permite crear y publicar páginas web."
-    acciones="crear publicar compartir"
-    recursos="rweb multimedia"
-    plataformas="pweb"
-    guia="http://valijas.ceibal.edu.uy/storage/app/media/Guias%20de%20uso/Wordpress.pdf"
-    link="https://wordpress.com/"
-    icono="wordpress"
-  }}
-  {{ctic-toolbox-card
-    titulo="Wix"
-    descripcion="Plataforma que permite crear y publicar páginas web de apariencia profesional de manera muy fácil."
-    acciones="crear publicar compartir"
-    recursos="rweb multimedia"
-    plataformas="pweb"
-    guia="https://es.wix.com/blog/2018/04/como-crear-una-pagina-web-desde-cero/"
-    link="https://www.wix.com/"
-    icono="wix"
-  }}
-  {{ctic-toolbox-card
-    titulo="Google Sites"
-    descripcion="Servicio integrado a Google Drive que permite crear y publicar sitios web sencillos de manera fácil y gratuita."
-    acciones="crear publicar compartir"
-    recursos="rweb multimedia"
-    plataformas="pweb"
-    guia="https://sites.google.com/site/tutorialsites4/como-crear-un-sitio"
-    link="https://sites.google.com/"
-    icono="google sites"
-  }}
-  {{ctic-toolbox-card
-    titulo="Canva"
-    descripcion="Herramienta de diseño y diagramación de imágenes para la web con modelos gratuitos."
-    acciones="crear disenar editar publicar compartir"
-    recursos="imagenes infografias"
-    plataformas="pweb android"
-    guia="http://e-forma.kzgunea.eus/pluginfile.php/13756/block_html/content/Manual%20CANVA.pdf"
-    link="https://www.canva.com/"
-    icono="canva"
-  }}
-  {{ctic-toolbox-card
-    titulo="GIMP"
-    descripcion="Programa de creación y edición de imágenes digitales gratuito y de código abierto."
-    acciones="crear disenar editar"
-    recursos="imagenes"
-    plataformas="linux windows"
-    guia="https://wiki-huayra.conectarigualdad.gob.ar/index.php?title=Edici%C3%B3n_B%C3%A1sica_GIMP"
-    link="https://www.gimp.org/"
-    icono="gimp"
-  }}
-  {{ctic-toolbox-card
-    titulo="Piktochart"
-    descripcion="Aplicación web que permite crear infografías y posters a partir de plantillas predeterminadas de manera fácil y gratuita."
-    acciones="crear disenar publicar compartir"
-    recursos="infografias informacion"
-    plataformas="pweb"
-    guia="https://piktochart.com/es/blog/como-crear-una-infografia-guia-completa/"
-    link="https://piktochart.com/"
-    icono="piktochart"
-  }}
-  {{ctic-toolbox-card
-    titulo="Audacity"
-    descripcion="Programa de grabación y edición de audio digital gratuito y de código abierto."
-    acciones="crear editar"
-    recursos="audios"
-    plataformas="linux windows"
-    guia="https://www.youtube.com/watch?v=u9EZc0UTCfg"
-    link="https://www.audacityteam.org/"
-    icono="audacity"
-  }}
-  {{ctic-toolbox-card
-    titulo="YouTube"
-    descripcion="Plataforma y red social para subir y visualizar videos, con opciones básicas de edición en la nube."
-    acciones="crear editar almacenar interactuar publicar compartir"
-    recursos="videos"
-    plataformas="pweb android"
-    guia="https://support.google.com/youtube#topic=7505892"
-    link="https://www.youtube.com/"
-    icono="youtube"
-  }}
-  {{ctic-toolbox-card
-    titulo="Soundcloud"
-    descripcion="Plataforma de distribución de audio y red social que permite crear, compartir y producir música, podcast y otros clips sonoros."
-    acciones="almacenar interactuar publicar compartir"
-    recursos="audios"
-    plataformas="pweb"
-    guia="https://drive.google.com/open?id=1dV2HZ3MMZd7tNKgGhplYoXmKI2Gjg9ii"
-    link="https://soundcloud.com/"
-    icono="soundcloud"
-  }}
-  {{ctic-toolbox-card
-    titulo="Movie Maker"
-    descripcion="Programa de edición de video que permite crear clips audiovisuales a partir de uno o varios vídeos, sonidos e imágenes."
-    acciones="crear editar"
-    recursos="videos"
-    plataformas="windows"
-    guia="http://greav.ub.edu/relatosdigitales/PDF/Tutorial_MovieMaker_castellano_v2.pdf"
-    link="https://www.microsoft.com/es-ar/store/p/movie-maker-free/9mvfq4lmz6c9"
-    icono="moviemaker"
-  }}
-  {{ctic-toolbox-card
-    titulo="OpenShot"
-    descripcion="Programa de edición de video gratuito y de código abierto que permite crear clips audiovisuales a partir de uno o varios vídeos, sonidos e imágenes."
-    acciones="crear editar"
-    recursos="videos"
-    plataformas="linux windows"
-    guia="https://wiki-huayra.conectarigualdad.gob.ar/index.php?title=Hac%C3%A9_tus_propios_videos_con_OpenShot"
-    link="https://www.openshot.org/"
-    icono="openshot"
-  }}
-  {{ctic-toolbox-card
-    titulo="Presentaciones de Google"
-    descripcion="Aplicación integrada a Google Drive para crear y guardar presentaciones en la nube utilizando textos, imágenes, videos y otros recursos multimedia."
-    acciones="crear publicar compartir"
-    recursos="presentaciones multimedia"
-    plataformas="pweb"
-    guia="https://support.google.com/docs/answer/1696521"
-    link="https://docs.google.com/presentation/u/0/"
-    icono="google slides"
-  }}
-  {{ctic-toolbox-card
-    titulo="Buscador de Google"
-    descripcion="Es el motor de búsqueda más popular de la Web. Permite buscar por palabras claves, segmentar imágenes, videos, noticias y más."
-    acciones="buscar gestionar"
-    recursos="informacion"
-    plataformas="pweb android"
-    guia="https://support.google.com/websearch/answer/134479?hl=es-419"
-    link="https://www.google.com/"
-    icono="google"
-  }}
-  {{ctic-toolbox-card
-    titulo="Duck Duck Go"
-    descripcion="Es un motor de búsqueda que prioriza la información de sitios de origen público y protege la privacidad del usuario."
-    acciones="buscar gestionar"
-    recursos="informacion"
-    plataformas="pweb"
-    guia="https://hipertextual.com/archivo/2014/06/que-usar-duckduckgo/"
-    link="https://duckduckgo.com/"
-    icono="duckduckgo"
-  }}
-  {{ctic-toolbox-card
-    titulo="Facebook"
-    descripcion="Red social que permite interactuar, crear álbumes de fotos, compartir vídeos, escribir notas, crear eventos o compartir el estado de ánimo con otros usuarios de la red."
-    acciones="interactuar publicar compartir"
-    recursos="multimedia informacion"
-    plataformas="pweb android"
-    guia="https://comenzandodecero.com/guia-definitiva-aprender-usar-facebook-2018/"
-    link="https://www.facebook.com/"
-    icono="facebook"
-  }}
-  {{ctic-toolbox-card
-    titulo="Twitter"
-    descripcion="Red social de microblogging caracterizada por la brevedad de las publicaciones."
-    acciones="interactuar publicar compartir"
-    recursos="multimedia informacion"
-    plataformas="pweb android"
-    guia="https://www.muyinteresante.es/tecnologia/articulo/como-usar-twitter-en-8-pasos"
-    link="https://twitter.com/?lang=es"
-    icono="twitter"
-  }}
-  {{ctic-toolbox-card
-    titulo="Instagram"
-    descripcion="Red social centrada en la edición y publicación de fotografías y videos con efectos especiales."
-    acciones="interactuar publicar compartir"
-    recursos="imagenes videos"
-    plataformas="pweb android"
-    guia="http://josemiguelgarcia.net/como-funciona-instagram-tutorial/"
-    link="https://www.instagram.com/"
-    icono="instagram"
-  }}
-  {{ctic-toolbox-card
-    titulo="Pinterest"
-    descripcion="Red social para organizar imágenes por categorías o tableros y compartirlas con otros usuarios."
-    acciones="gestionar interactuar publicar compartir"
-    recursos="imagenes"
-    plataformas="pweb android"
-    guia="https://computerhoy.com/paso-a-paso/internet/tutorial-como-usar-pinterest-sacarle-maximo-partido-11141"
-    link="https://www.pinterest.com/"
-    icono="pinterest"
-  }}
-  {{ctic-toolbox-card
-    titulo="Telegraph"
-    descripcion="Plataforma de publicación de contenidos que no requiere registro y puede usarse de forma anónima."
-    acciones="publicar compartir"
-    recursos="informacion"
-    plataformas="pweb"
-    guia="https://docs.google.com/document/d/e/2PACX-1vQbqThuj4HAcodirTCOTXzIv_QbsfcNQGZm324pLrz1zGyQ7PNu-jGKVtJigjWA07Si6PY0_mmieQ8j/pub"
-    link="http://telegra.ph"
-    icono="telegraph"
-  }}
-  {{ctic-toolbox-card
-    titulo="Google MyMaps"
-    descripcion="Servicio para crear mapas personalizados con marcadores e indicaciones."
-    acciones="crear publicar compartir"
-    recursos="mapas"
-    plataformas="pweb android"
-    guia="https://www.educaciontrespuntocero.com/novedades2/software2/tutorial-crear-mapa-google-maps/38079.html"
-    link="https://www.google.com/mymaps"
-    icono="google maps"
-  }}
-  {{ctic-toolbox-card
-    titulo="Timeline JS"
-    descripcion="Herramienta que permite crear líneas de tiempo interactivas a partir de una tabla de Google."
-    acciones="crear publicar compartir"
-    recursos="lineas-de-tiempo"
-    plataformas="pweb"
-    guia="https://drive.google.com/open?id=1BQoL55PUa4nMGlB_LHdc3OT93eKjEKTe"
-    link="https://timeline.knightlab.com/"
-    icono="timelinejs"
-  }}
+<div class="ui inverted blue segment">
+  <div class="ui container">
+    <div class="ui four column grid">
+      {{ctic-toolbox-card
+        titulo="Scratch"
+        descripcion="Lenguaje de programación creado por el MIT que sirve para crear historias interactivas, juegos y animaciones que pueden ser compartidas con otras personas vía Web."
+        acciones="crear programar"
+        recursos="simulaciones juegos"
+        plataformas="pweb linux windows"
+        guia="http://eduteka.icesi.edu.co/pdfdir/ScratchGuiaReferencia.pdf"
+        link="https://scratch.mit.edu/"
+        icono="scratch"
+      }}
+      {{ctic-toolbox-card
+        titulo="Google Drive"
+        descripcion="Servicio de alojamiento de archivos en la nube que permite crear, almacenar, editar, sincronizar en diversos dispositivos y compartir todo tipo de documentos."
+        acciones="crear almacenar gestionar publicar compartir"
+        recursos="documentos multimedia informacion"
+        plataformas="pweb windows linux android"
+        guia="https://support.google.com/drive/answer/2424384?co=GENIE.Platform%3DDesktop&hl=es"
+        link="https://www.google.com/drive/"
+        icono="google-drive"
+      }}
+      {{ctic-toolbox-card
+        titulo="Blogger"
+        descripcion="Servicio que permite crear y publicar blogs o bitácoras en línea de manera fácil y gratuita."
+        acciones="crear publicar compartir"
+        recursos="rweb multimedia"
+        plataformas="pweb"
+        guia="https://support.google.com/blogger/?hl=es#topic=3339243"
+        link="https://www.blogger.com/"
+        icono="blogger"
+      }}
+      {{ctic-toolbox-card
+        titulo="Wordpress"
+        descripcion="Sistema de gestión de contenidos o CMS gratuito y de código abierto que permite crear y publicar páginas web."
+        acciones="crear publicar compartir"
+        recursos="rweb multimedia"
+        plataformas="pweb"
+        guia="http://valijas.ceibal.edu.uy/storage/app/media/Guias%20de%20uso/Wordpress.pdf"
+        link="https://wordpress.com/"
+        icono="wordpress"
+      }}
+      {{ctic-toolbox-card
+        titulo="Wix"
+        descripcion="Plataforma que permite crear y publicar páginas web de apariencia profesional de manera muy fácil."
+        acciones="crear publicar compartir"
+        recursos="rweb multimedia"
+        plataformas="pweb"
+        guia="https://es.wix.com/blog/2018/04/como-crear-una-pagina-web-desde-cero/"
+        link="https://www.wix.com/"
+        icono="wix"
+      }}
+      {{ctic-toolbox-card
+        titulo="Google Sites"
+        descripcion="Servicio integrado a Google Drive que permite crear y publicar sitios web sencillos de manera fácil y gratuita."
+        acciones="crear publicar compartir"
+        recursos="rweb multimedia"
+        plataformas="pweb"
+        guia="https://sites.google.com/site/tutorialsites4/como-crear-un-sitio"
+        link="https://sites.google.com/"
+        icono="google-sites"
+      }}
+      {{ctic-toolbox-card
+        titulo="Canva"
+        descripcion="Herramienta de diseño y diagramación de imágenes para la web con modelos gratuitos."
+        acciones="crear disenar editar publicar compartir"
+        recursos="imagenes infografias"
+        plataformas="pweb android"
+        guia="http://e-forma.kzgunea.eus/pluginfile.php/13756/block_html/content/Manual%20CANVA.pdf"
+        link="https://www.canva.com/"
+        icono="canva"
+      }}
+      {{ctic-toolbox-card
+        titulo="GIMP"
+        descripcion="Programa de creación y edición de imágenes digitales gratuito y de código abierto."
+        acciones="crear disenar editar"
+        recursos="imagenes"
+        plataformas="linux windows"
+        guia="https://wiki-huayra.conectarigualdad.gob.ar/index.php?title=Edici%C3%B3n_B%C3%A1sica_GIMP"
+        link="https://www.gimp.org/"
+        icono="gimp"
+      }}
+      {{ctic-toolbox-card
+        titulo="Piktochart"
+        descripcion="Aplicación web que permite crear infografías y posters a partir de plantillas predeterminadas de manera fácil y gratuita."
+        acciones="crear disenar publicar compartir"
+        recursos="infografias informacion"
+        plataformas="pweb"
+        guia="https://piktochart.com/es/blog/como-crear-una-infografia-guia-completa/"
+        link="https://piktochart.com/"
+        icono="piktochart"
+      }}
+      {{ctic-toolbox-card
+        titulo="Audacity"
+        descripcion="Programa de grabación y edición de audio digital gratuito y de código abierto."
+        acciones="crear editar"
+        recursos="audios"
+        plataformas="linux windows"
+        guia="https://www.youtube.com/watch?v=u9EZc0UTCfg"
+        link="https://www.audacityteam.org/"
+        icono="audacity"
+      }}
+      {{ctic-toolbox-card
+        titulo="YouTube"
+        descripcion="Plataforma y red social para subir y visualizar videos, con opciones básicas de edición en la nube."
+        acciones="crear editar almacenar interactuar publicar compartir"
+        recursos="videos"
+        plataformas="pweb android"
+        guia="https://support.google.com/youtube#topic=7505892"
+        link="https://www.youtube.com/"
+        icono="youtube"
+      }}
+      {{ctic-toolbox-card
+        titulo="Soundcloud"
+        descripcion="Plataforma de distribución de audio y red social que permite crear, compartir y producir música, podcast y otros clips sonoros."
+        acciones="almacenar interactuar publicar compartir"
+        recursos="audios"
+        plataformas="pweb"
+        guia="https://drive.google.com/open?id=1dV2HZ3MMZd7tNKgGhplYoXmKI2Gjg9ii"
+        link="https://soundcloud.com/"
+        icono="soundcloud"
+      }}
+      {{ctic-toolbox-card
+        titulo="Movie Maker"
+        descripcion="Programa de edición de video que permite crear clips audiovisuales a partir de uno o varios vídeos, sonidos e imágenes."
+        acciones="crear editar"
+        recursos="videos"
+        plataformas="windows"
+        guia="http://greav.ub.edu/relatosdigitales/PDF/Tutorial_MovieMaker_castellano_v2.pdf"
+        link="https://www.microsoft.com/es-ar/store/p/movie-maker-free/9mvfq4lmz6c9"
+        icono="moviemaker"
+      }}
+      {{ctic-toolbox-card
+        titulo="OpenShot"
+        descripcion="Programa de edición de video gratuito y de código abierto que permite crear clips audiovisuales a partir de uno o varios vídeos, sonidos e imágenes."
+        acciones="crear editar"
+        recursos="videos"
+        plataformas="linux windows"
+        guia="https://wiki-huayra.conectarigualdad.gob.ar/index.php?title=Hac%C3%A9_tus_propios_videos_con_OpenShot"
+        link="https://www.openshot.org/"
+        icono="openshot"
+      }}
+      {{ctic-toolbox-card
+        titulo="Presentaciones de Google"
+        descripcion="Aplicación integrada a Google Drive para crear y guardar presentaciones en la nube utilizando textos, imágenes, videos y otros recursos multimedia."
+        acciones="crear publicar compartir"
+        recursos="presentaciones multimedia"
+        plataformas="pweb"
+        guia="https://support.google.com/docs/answer/1696521"
+        link="https://docs.google.com/presentation/u/0/"
+        icono="google-slides"
+      }}
+      {{ctic-toolbox-card
+        titulo="Buscador de Google"
+        descripcion="Es el motor de búsqueda más popular de la Web. Permite buscar por palabras claves, segmentar imágenes, videos, noticias y más."
+        acciones="buscar gestionar"
+        recursos="informacion"
+        plataformas="pweb android"
+        guia="https://support.google.com/websearch/answer/134479?hl=es-419"
+        link="https://www.google.com/"
+        icono="google"
+      }}
+      {{ctic-toolbox-card
+        titulo="Duck Duck Go"
+        descripcion="Es un motor de búsqueda que prioriza la información de sitios de origen público y protege la privacidad del usuario."
+        acciones="buscar gestionar"
+        recursos="informacion"
+        plataformas="pweb"
+        guia="https://hipertextual.com/archivo/2014/06/que-usar-duckduckgo/"
+        link="https://duckduckgo.com/"
+        icono="duckduckgo"
+      }}
+      {{ctic-toolbox-card
+        titulo="Facebook"
+        descripcion="Red social que permite interactuar, crear álbumes de fotos, compartir vídeos, escribir notas, crear eventos o compartir el estado de ánimo con otros usuarios de la red."
+        acciones="interactuar publicar compartir"
+        recursos="multimedia informacion"
+        plataformas="pweb android"
+        guia="https://comenzandodecero.com/guia-definitiva-aprender-usar-facebook-2018/"
+        link="https://www.facebook.com/"
+        icono="facebook"
+      }}
+      {{ctic-toolbox-card
+        titulo="Twitter"
+        descripcion="Red social de microblogging caracterizada por la brevedad de las publicaciones."
+        acciones="interactuar publicar compartir"
+        recursos="multimedia informacion"
+        plataformas="pweb android"
+        guia="https://www.muyinteresante.es/tecnologia/articulo/como-usar-twitter-en-8-pasos"
+        link="https://twitter.com/?lang=es"
+        icono="twitter"
+      }}
+      {{ctic-toolbox-card
+        titulo="Instagram"
+        descripcion="Red social centrada en la edición y publicación de fotografías y videos con efectos especiales."
+        acciones="interactuar publicar compartir"
+        recursos="imagenes videos"
+        plataformas="pweb android"
+        guia="http://josemiguelgarcia.net/como-funciona-instagram-tutorial/"
+        link="https://www.instagram.com/"
+        icono="instagram"
+      }}
+      {{ctic-toolbox-card
+        titulo="Pinterest"
+        descripcion="Red social para organizar imágenes por categorías o tableros y compartirlas con otros usuarios."
+        acciones="gestionar interactuar publicar compartir"
+        recursos="imagenes"
+        plataformas="pweb android"
+        guia="https://computerhoy.com/paso-a-paso/internet/tutorial-como-usar-pinterest-sacarle-maximo-partido-11141"
+        link="https://www.pinterest.com/"
+        icono="pinterest"
+      }}
+      {{ctic-toolbox-card
+        titulo="Telegraph"
+        descripcion="Plataforma de publicación de contenidos que no requiere registro y puede usarse de forma anónima."
+        acciones="publicar compartir"
+        recursos="informacion"
+        plataformas="pweb"
+        guia="https://docs.google.com/document/d/e/2PACX-1vQbqThuj4HAcodirTCOTXzIv_QbsfcNQGZm324pLrz1zGyQ7PNu-jGKVtJigjWA07Si6PY0_mmieQ8j/pub"
+        link="http://telegra.ph"
+        icono="telegraph"
+      }}
+      {{ctic-toolbox-card
+        titulo="Google MyMaps"
+        descripcion="Servicio para crear mapas personalizados con marcadores e indicaciones."
+        acciones="crear publicar compartir"
+        recursos="mapas"
+        plataformas="pweb android"
+        guia="https://www.educaciontrespuntocero.com/novedades2/software2/tutorial-crear-mapa-google-maps/38079.html"
+        link="https://www.google.com/mymaps"
+        icono="google-maps"
+      }}
+      {{ctic-toolbox-card
+        titulo="Timeline JS"
+        descripcion="Herramienta que permite crear líneas de tiempo interactivas a partir de una tabla de Google."
+        acciones="crear publicar compartir"
+        recursos="lineas-de-tiempo"
+        plataformas="pweb"
+        guia="https://drive.google.com/open?id=1BQoL55PUa4nMGlB_LHdc3OT93eKjEKTe"
+        link="https://timeline.knightlab.com/"
+        icono="timelinejs"
+      }}
+    </div>
+  </div>
 </div>

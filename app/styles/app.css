@@ -152,6 +152,10 @@ p {
   color: #27aae2;
 }
 
+.ui.fixed.menu {
+  top: 45px;
+}
+
 /* Home */
 .ui.vertical.segment {
   padding-bottom: 0;
@@ -322,6 +326,8 @@ p {
 }
 
 /* Footer */
+
 .ui.inverted.vertical.footer.segment {
+  background-color: #333333;
   margin-top: 5em;
 }

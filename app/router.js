@@ -22,6 +22,7 @@ Router.map(function() {
     this.route("tablero", function() {
       this.route("index");
       this.route("escuela", { path: "escuela/:escuela_id" });
+      this.route("equipo", { path: "equipo/:equipo_id" });
     });
     this.route("herramientas");
   });

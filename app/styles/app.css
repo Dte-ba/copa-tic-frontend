@@ -27,6 +27,14 @@ p {
 .grupo-visible {
   display: inline-block !important;
 }
+
+.div-visible {
+  display: block !important;
+}
+
+.div-oculto {
+  display: none !important;
+}
 /* colores */
 
 .white {
@@ -47,18 +55,22 @@ p {
 
 .bg.azul {
   background-color: #1b2647 !important;
+  color: #fff !important;
 }
 
 .bg.verde {
   background-color: #a4c136 !important;
+  color: #fff !important;
 }
 
 .bg.celeste {
   background-color: #009cde !important;
+  color: #fff !important;
 }
 
 .bg.fuccia {
   background-color: #d70046 !important;
+  color: #fff !important;
 }
 
 /* Fonts */
@@ -153,7 +165,7 @@ p {
 }
 
 .ui.fixed.menu {
-  top: 45px;
+  /* top: 45px; */
 }
 
 /* Home */
@@ -161,14 +173,14 @@ p {
   padding-bottom: 0;
 }
 .ui.vertical.segment.home-a-jugar {
-  background: #149bd7;
   padding: 5rem;
 }
 
 .home-a-jugar .header {
-  background: #ffffff;
-  color: #e1033c;
-  border-radius: 8px;
+  background: transparent url("/assets/home/vamos-a-jugar-bg.svg") no-repeat
+    center center;
+  background-size: 100% auto;
+  color: #1b2647;
   text-align: center;
   text-transform: uppercase;
   font-family: "Affogato-Black", sans-serif;
@@ -185,10 +197,12 @@ p {
 }
 
 .home-a-jugar .blurring.dimmable > .dimmer {
-  background-color: rgba(20, 155, 215, 0.5);
+  background-color: rgba(164, 193, 54, 0.5);
 }
 
 .ui.vertical.segment.home-resolve {
+  background: #fff url("/assets/home/bg-iconos.svg") no-repeat center center;
+  background-size: cover;
   padding: 5rem;
 }
 
@@ -212,8 +226,26 @@ p {
 }
 
 .home-resolve h1.ui.header {
-  color: #e1033c;
+  color: #1b2647;
 }
+
+.home-tablero > .header {
+  margin-bottom: 0;
+  padding: 5px 0 10px 0;
+}
+.home-tablero > .header > .content {
+  color: #fff;
+}
+
+.ui.vertical.segment.home_segui-de-cerca {
+  background: transparent url("/assets/home/segui-de-cerca_bg.svg") no-repeat
+    center center;
+  background-size: cover;
+  padding: 6.5em 0 4em 0;
+  margin-bottom: 0 !important;
+}
+
+/* tablero */
 
 /* Slider */
 

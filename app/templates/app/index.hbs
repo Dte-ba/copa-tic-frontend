@@ -6,7 +6,7 @@
         {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_03.jpg" />{{/swiper-slide}}
       {{/swiper-container}}
 </div>
-<div class="ui vertical stripe segment home-a-jugar">
+<div class="ui vertical stripe segment home-a-jugar bg verde">
   <div class="ui container">
     {{ctic-home-cards}}
   </div>
@@ -16,9 +16,7 @@
     <div class="ui four huge blue statistics">
       <div class="ui statistic">
         <div class="value">
-          <i class="users icon"></i>
-        </div>
-        <div class="value">
+          <img class="ui fluid image" src="/assets/home/icono-estudiantes.svg" alt="1800 estudiantes">
           1800
         </div>
         <div class="label">
@@ -27,9 +25,7 @@
       </div>
       <div class="ui statistic">
         <div class="value">
-          <i class="university icon"></i>
-        </div>
-        <div class="value">
+          <img class="ui fluid image" src="/assets/home/icono-secundarias.svg" alt="71 secundarias">
           71
         </div>
         <div class="label">
@@ -38,9 +34,7 @@
       </div>
       <div class="ui statistic">
         <div class="value">
-          <i class="calendar icon"></i>
-        </div>
-        <div class="value">
+          <img class="ui fluid image" src="/assets/home/icono-dias.svg" alt="26 días">
           26
         </div>
         <div class="label">
@@ -49,9 +43,7 @@
       </div>
       <div class="ui statistic">
         <div class="value">
-          <i class="computer icon"></i>
-        </div>
-        <div class="value">
+          <img class="ui fluid image" src="/assets/home/icono-desafios.svg" alt="16 desafíos">
           16
         </div>
         <div class="label">
@@ -61,17 +53,52 @@
     </div>
     <h1 class="ui center aligned header">
       <div class="ui content">
-
           <i class="ui small chevron right icon"></i>
         <span class="affo-light">UN SOLO OBJETIVO:</span> <span class="affo-medium">LLENAR LA <b>#COPATIC</b></span>
       </div>
     </h1>
   </div>
 </div>
-<div class="ui vertical stripe segment">
-  {{#link-to 'app.tablero'}}
-    <img class="ui fluid image" src="/home/ctic_home_mapa.jpg" alt="Encontrá tu escuela"/>
-  {{/link-to}}
+<div class="ui vertical stripe center aligned segment home-tablero" id="tablero">
+  <h1 class="ui header bg fuccia">
+    <img class="ui small image" src="/assets/home/icono-secundarias-blanco.svg">
+    <div class="content">
+      ENCONTRÁ TU ESCUELA EN EL TABLERO
+    </div>
+  </h1>
+  <!-- Mapa -->
+    {{#g-map lat=-36.0317071 lng=-59.7663028 zoom=6.5 as |context|}}
+      {{#if model.listaDeEscuelas.isFinished}}
+        {{#each model.listaDeEscuelas.value.data as |e|}}
+
+          {{#g-map-marker context group="escuela" lat=e.latitud lng=e.longitud as |markerContext|}}
+            {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
+              <div class="ui segment infowindow-segment">
+                <h2 class="ui header">
+                  {{#link-to 'app.tablero.escuela' e.id}}
+                    {{e.nombre}}
+                  {{/link-to}}
+                  <div class="ui sub header">{{e.localidad}}</div>
+                </h2>
+                <div class="ui equal width grid">
+                  {{#each e.equipos as |equipo|}}
+                  <div class="column">
+                    <span class="meta">Equipo {{eid-a-equipo eid=equipo.eid}}</span>
+                    <h5 class="ui header">
+                      {{equipo.dt}}
+                    </h5>
+                    <h4 class="ui header">
+                      {{equipo.nombre}}
+                    </h4>
+                  </div>
+                  {{/each}}
+                </div>
+              </div>
+            {{/g-map-infowindow}}
+          {{/g-map-marker}}
+        {{/each}}
+      {{/if}}
+    {{/g-map}}
 </div>
 <div class="ui vertical center aligned segment">
   <h1 class="ui icon header">
@@ -80,4 +107,32 @@
     </div>
     <i class="ui massive trophy icon"></i>
   </h1>
+</div>
+<div class="ui vertical stripe padded segment bg celeste">
+  <img class="ui image" src="/assets/home/home_producciones-colectivas.svg" alt="Resumen semanal de desafíos - Producciones colectivas">
+</div>
+<div class="ui vertical stripe padded segment home_segui-de-cerca">
+  <div class="ui container">
+    <div class="ui equal width fluid grid">
+      <div class="column">
+        <img class="ui medium image" src="/assets/home/home_segui-de-cerca-la-copatic.svg" alt="" >
+      </div>
+      <div class="column">
+        <div class="ui four column grid">
+          <a href="" class="ui column">
+            <img class="ui tiny image" src="/assets/home/home_icono-facebook.svg" alt="" >
+          </a>
+          <a href="" class="ui column">
+            <img class="ui tiny image" src="/assets/home/home_icono-twitter.svg" alt="" >
+          </a>
+          <a href="" class="ui column">
+            <img class="ui tiny image" src="/assets/home/home_icono-youtube.svg" alt="" >
+          </a>
+          <a href="" class="ui column">
+            <img class="ui tiny image" src="/assets/home/home_icono-instagram.svg" alt="" >
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,240 @@
+<div class="ui vertical stripe padded segment">
+  <div class="ui container">
+    <div class="filters">
+    <div class="ui top attached tabular menu">
+      {{#each equipos as |equipo|}}
+        <a class="item" id="link-equipo-{{eid-a-equipo eid=equipo.eid}}">
+          <div class="ui list">
+            <div class="item">
+              <span class="meta">Equipo {{eid-a-equipo eid=equipo.eid}}</span>
+            </div>
+            <div class="item">
+              <b>{{equipo.dt}}</b>
+            </div>
+            <div class="item">
+              <b>{{equipo.nombre}}</b>
+            </div>
+          </div>
+        </a>
+      {{/each}}
+    </div>
+  </div>
+  </div>
+</div>
+{{#each equipos as |equipo|}}
+<div class="div-oculto" id="equipo-{{eid-a-equipo eid=equipo.eid}}">
+
+  <div class="ui bottom attached segment">
+    insignias del equipo {{eid-a-equipo eid=equipo.eid}} - {{equipo.nombre}}
+
+  </div>
+  <div class="ui inverted padded segment bg azul">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ui four wide column">
+          <h1 class="ui center aligned white header">
+            FASE<br>
+            4
+          </h1>
+        </div>
+        <div class="ui twelve wide column">
+          <div class="ui two column grid">
+            <div class="ui column">
+                {{#if (eq equipo.a13estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a14estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a15estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a16estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted padded segment bg verde">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ui four wide column">
+          <h1 class="ui center aligned white header">
+            FASE<br>
+            3
+          </h1>
+        </div>
+        <div class="ui twelve wide column">
+          <div class="ui two column grid">
+            <div class="ui column">
+                {{#if (eq equipo.a9estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a10estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a11estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a12estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted padded segment bg fuccia">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ui four wide column">
+          <h1 class="ui center aligned white header">
+            FASE<br>
+            2
+          </h1>
+        </div>
+        <div class="ui twelve wide column">
+          <div class="ui two column grid">
+            <div class="ui column">
+                {{#if (eq equipo.a5estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a6estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a7estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a8estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui inverted padded segment bg celeste">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ui four wide column">
+          <h1 class="ui center aligned white header">
+            FASE<br>
+            1
+          </h1>
+        </div>
+        <div class="ui twelve wide column">
+          <div class="ui two column grid">
+            <div class="ui column">
+                {{#if (eq equipo.a1estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a2estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a3estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+            <div class="ui column">
+                {{#if (eq equipo.a4estado "true")}}
+                <a class="ui card">
+                  OK
+                </a>
+                {{else}}
+                  FALTA
+                {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{/each}}

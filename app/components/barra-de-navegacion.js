@@ -1,14 +1,15 @@
 import Ember from "ember";
 
 export default Ember.Component.extend({
-  classNames: [
-    "ui",
-    "fixed",
-    "borderless",
-    "menu",
-    "barra-de-navegacion",
-    "z-max"
-  ],
+  tagName: "",
+  // classNames: [
+  //   "ui",
+  //   "fixed",
+  //   "borderless",
+  //   "menu",
+  //   "barra-de-navegacion",
+  //   "z-max"
+  // ],
   sidebarVisible: false,
   actions: {
     mostrarSidebar() {

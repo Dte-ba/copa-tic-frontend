@@ -17,7 +17,9 @@ Ember.Router.reopen({
 Router.map(function() {
   this.route("app", function() {
     this.route("proyecto");
-    this.route("juego");
+    this.route("juego", function() {
+      this.route('desafio1');
+    });
     this.route("desafios");
     this.route("tablero", function() {
       this.route("index");

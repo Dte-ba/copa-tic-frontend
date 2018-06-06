@@ -21,5 +21,6 @@ export default DS.Model.extend({
   a13estado: DS.attr("string"),
   a14estado: DS.attr("string"),
   a15estado: DS.attr("string"),
-  a16estado: DS.attr("string")
+  a16estado: DS.attr("string"),
+  insignias_ganadas: DS.attr("string")
 });

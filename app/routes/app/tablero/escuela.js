@@ -6,8 +6,10 @@ export default Ember.Route.extend({
     let escuela = this.store.findRecord("escuela", escuela_id, {
       include: "equipos"
     });
+    let insignias = this.store.findAll("insignia");
     return {
-      escuela: escuela
+      escuela: escuela,
+      insignias: insignias
     };
   }
 });

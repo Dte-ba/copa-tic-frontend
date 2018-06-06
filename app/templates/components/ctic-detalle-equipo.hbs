@@ -26,7 +26,21 @@
 
   <div class="ui bottom attached segment">
     insignias del equipo {{eid-a-equipo eid=equipo.eid}} - {{equipo.nombre}}
-
+    {{equipo.insignias_ganadas}}
+    <div class="ui grid">
+      <div class="ui four wide column">
+        XX Insignias
+      </div>
+      <div class="ui twelve wide column">
+        <div class="ui seven column grid">
+          {{#each insignias as |insignia|}}
+            <div class="column">
+              <img class="ui tiny image" src="/assets/insignias/{{insignia.slug}}.svg" alt="{{insignia.nombre}}">
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
   </div>
   <div class="ui inverted padded segment bg azul">
     <div class="ui container">

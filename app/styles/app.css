@@ -168,6 +168,25 @@ p {
   /* top: 45px; */
 }
 
+/* Juego */
+.ui.vertical.segment.segment-juego {
+  padding-bottom: 2em;
+}
+.ui.vertical.segment.segment-juego .ui.basic.button {
+  border-radius: 0;
+}
+
+.ui.vertical.segment.detalle-desafio .header {
+  color: #36405d;
+  text-transform: uppercase;
+}
+
+.ui.vertical.segment.detalle-desafio .ui.bulleted.list,
+.ui.vertical.segment.detalle-desafio .ui.ordered.list {
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+
 /* Home */
 .ui.vertical.segment {
   padding-bottom: 0;

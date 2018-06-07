@@ -19,6 +19,21 @@ Router.map(function() {
     this.route("proyecto");
     this.route("juego", function() {
       this.route('desafio1');
+      this.route('desafio2');
+      this.route('desafio3');
+      this.route('desafio4');
+      this.route('desafio5');
+      this.route('desafio6');
+      this.route('desafio7');
+      this.route('desafio8');
+      this.route('desafio9');
+      this.route('desafio10');
+      this.route('desafio11');
+      this.route('desafio12');
+      this.route('desafio13');
+      this.route('desafio14');
+      this.route('desafio15');
+      this.route('desafio16');
     });
     this.route("desafios");
     this.route("tablero", function() {

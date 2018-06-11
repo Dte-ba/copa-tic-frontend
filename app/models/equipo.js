@@ -38,14 +38,12 @@ export default DS.Model.extend({
   a14link: DS.attr("string"),
   a15link: DS.attr("string"),
   a16link: DS.attr("string"),
-  insignias_ganadas: DS.attr("string"),
+  insignias_ganadas: DS.attr(),
 
-  insignias_ganadas_array: Ember.computed("insignias_ganadas", function() {
+  totalDeInsigniasGanadas: Ember.computed("insignias_ganadas", function() {
     let insignias = this.get("insignias_ganadas");
-    let insignias_array = insignias.split(",");
-    if (insignias_array[0] === "") {
-      insignias_array = null;
-    }
-    return insignias_array;
+    let ganadas = insignias.filterBy("tiene", true);
+
+    return ganadas.length;
   })
 });

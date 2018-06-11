@@ -265,6 +265,12 @@ p {
 }
 
 /* tablero */
+
+img.monocromo {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
 .right-side-border {
   border-right: 1px solid #1c1f4c;
 }

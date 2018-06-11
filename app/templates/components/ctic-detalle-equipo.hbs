@@ -31,11 +31,7 @@
           <h1 class="ui huge center aligned icon header">
             <div class="content">
               <img class="ui mini centered image" src="/assets/iconos/icono_pelota.svg" alt="Ícono pelota de fútbol" />
-              {{#if (eq equipo.insignias_ganadas_array null)}}
-                0
-              {{else}}
-                {{equipo.insignias_ganadas_array.length}}
-              {{/if}}
+                {{equipo.totalDeInsigniasGanadas}}
               <div class="ui sub header">
                 INSIGNIAS
               </div>
@@ -47,14 +43,11 @@
         </div>
         <div class="ui twelve wide column">
           <div class="ui seven column grid">
-            {{log equipo.insignias_ganadas}}
-            {{debugger}}
             {{#each equipo.insignias_ganadas as |insignia|}}
-              {{#if insignia}}
+
                 <div class="column">
-                  <img class="ui tiny image" src="/assets/insignias/{{insignia}}.svg" alt="{{insignia.nombre}}">
+                  <img class="ui tiny {{if insignia.tiene '' 'disabled monocromo'}} image" src="/assets/insignias/{{insignia.nombre}}.svg" alt="{{insignia.nombre}}">
                 </div>
-              {{/if}}
             {{/each}}
           </div>
         </div>

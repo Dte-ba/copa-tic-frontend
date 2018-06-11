@@ -265,6 +265,46 @@ p {
 }
 
 /* tablero */
+.right-side-border {
+  border-right: 1px solid #1c1f4c;
+}
+.left-side-border-white {
+  border-left: 1px solid #ffffff;
+}
+#link-equipo-1,
+#link-equipo-2 {
+  margin: 0;
+}
+
+#link-equipo-1.item,
+#link-equipo-2.item {
+  background-color: #ffffff;
+  color: #1c1f4c;
+  border-color: #1c1f4c;
+}
+
+#link-equipo-1.item .ui.list > .item,
+#link-equipo-2.item .ui.list > .item {
+  background-color: #ffffff;
+  color: #1c1f4c;
+}
+
+#link-equipo-1.active.item,
+#link-equipo-2.active.item,
+#link-equipo-1.active .ui.list > .item,
+#link-equipo-2.active .ui.list > .item {
+  background-color: #1c1f4c;
+  color: #ffffff;
+}
+
+.ui.column.desafio-card .ui.card {
+  border-radius: 0;
+}
+
+.ui.disabled.card {
+  height: 150px;
+  opacity: 0.2;
+}
 
 /* Slider */
 

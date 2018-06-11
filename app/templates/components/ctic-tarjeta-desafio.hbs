@@ -1,0 +1,16 @@
+{{#if (eq actividad "true")}}
+  <a href="{{link}}" class="ui card" target="_blank" title="Ver contenido">
+    <div class="content">
+      <div class="header">{{titulo}}</div>
+    </div>
+    <div class="content">
+      <div class="description">
+        {{descripcion}}
+      </div>
+    </div>
+  </a>
+{{else}}
+  <a class="ui disabled card">
+
+  </a>
+{{/if}}

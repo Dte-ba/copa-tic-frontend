@@ -9,11 +9,11 @@
               <span class="meta">Equipo {{eid-a-equipo eid=equipo.eid}}</span>
             </div>
             <div class="item">
-              <b>{{equipo.dt}}</b>
+              <b>DT {{equipo.dt}}</b>
             </div>
-            <div class="item">
+            <h2 class="item">
               <b>{{equipo.nombre}}</b>
-            </div>
+            </h2>
           </div>
         </a>
       {{/each}}
@@ -24,226 +24,229 @@
 {{#each equipos as |equipo|}}
 <div class="div-oculto" id="equipo-{{eid-a-equipo eid=equipo.eid}}">
 
-  <div class="ui bottom attached segment">
-    insignias del equipo {{eid-a-equipo eid=equipo.eid}} - {{equipo.nombre}}
-    {{equipo.insignias_ganadas}}
-    <div class="ui grid">
-      <div class="ui four wide column">
-        XX Insignias
-      </div>
-      <div class="ui twelve wide column">
-        <div class="ui seven column grid">
-          {{#each insignias as |insignia|}}
-            <div class="column">
-              <img class="ui tiny image" src="/assets/insignias/{{insignia.slug}}.svg" alt="{{insignia.nombre}}">
+  <div class="ui bottom attached very padded segment">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ui four wide middle aligned column right-side-border">
+          <h1 class="ui huge center aligned icon header">
+            <div class="content">
+              <img class="ui mini centered image" src="/assets/iconos/icono_pelota.svg" alt="Ícono pelota de fútbol" />
+              {{#if (eq equipo.insignias_ganadas_array null)}}
+                0
+              {{else}}
+                {{equipo.insignias_ganadas_array.length}}
+              {{/if}}
+              <div class="ui sub header">
+                INSIGNIAS
+              </div>
+              <div class="ui sub header">
+                GANADAS
+              </div>
             </div>
-          {{/each}}
+          </h1>
+        </div>
+        <div class="ui twelve wide column">
+          <div class="ui seven column grid">
+            {{log equipo.insignias_ganadas}}
+            {{debugger}}
+            {{#each equipo.insignias_ganadas as |insignia|}}
+              {{#if insignia}}
+                <div class="column">
+                  <img class="ui tiny image" src="/assets/insignias/{{insignia}}.svg" alt="{{insignia.nombre}}">
+                </div>
+              {{/if}}
+            {{/each}}
+          </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="ui inverted padded segment bg azul">
+  <div class="ui inverted very padded segment bg azul">
     <div class="ui container">
       <div class="ui grid">
-        <div class="ui four wide column">
+        <div class="ui four wide middle aligned column">
           <h1 class="ui center aligned white header">
             FASE<br>
             4
           </h1>
         </div>
-        <div class="ui twelve wide column">
+        <div class="ui twelve wide column left-side-border-white">
           <div class="ui two column grid">
-            <div class="ui column">
-                {{#if (eq equipo.a13estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a13link
+                actividad=equipo.a13estado
+                titulo="El gol animado"
+                insignias="programacion"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a14estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a14link
+                actividad=equipo.a14estado
+                titulo="Medios, fútbol y discriminación"
+                insignias="evaluacion-y-seleccion-de-medios-y-tecnologia, interpretacion-textual"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a15estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a15link
+                actividad=equipo.a15estado
+                titulo="El Mundial de los datos"
+                insignias=""
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a16estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a16link
+                actividad=equipo.a16estado
+                titulo="Los estadios a través de la historia"
+                insignias=""
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="ui inverted padded segment bg verde">
+  <div class="ui inverted very padded segment bg verde">
     <div class="ui container">
       <div class="ui grid">
-        <div class="ui four wide column">
+        <div class="ui four wide middle aligned column">
           <h1 class="ui center aligned white header">
             FASE<br>
             3
           </h1>
         </div>
-        <div class="ui twelve wide column">
+        <div class="ui twelve wide column left-side-border-white">
           <div class="ui two column grid">
-            <div class="ui column">
-                {{#if (eq equipo.a9estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a9link
+                actividad=equipo.a9estado
+                titulo="¿A qué jugamos?"
+                insignias=""
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a10estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a10link
+                actividad=equipo.a10estado
+                titulo="Al ritmo del Mundial"
+                insignias="produccion-sonora"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a11estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a11link
+                actividad=equipo.a11estado
+                titulo="El fútbol en mi barrio"
+                insignias="produccion-fotografica"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a12estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a12link
+                actividad=equipo.a12estado
+                titulo="Campaña contra la discriminación de género en el fútbol"
+                insignias="participacion-en-redes-sociales"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="ui inverted padded segment bg fuccia">
+  <div class="ui inverted very padded segment bg fuccia">
     <div class="ui container">
       <div class="ui grid">
-        <div class="ui four wide column">
+        <div class="ui four wide middle aligned column">
           <h1 class="ui center aligned white header">
             FASE<br>
             2
           </h1>
         </div>
-        <div class="ui twelve wide column">
+        <div class="ui twelve wide column left-side-border-white">
           <div class="ui two column grid">
-            <div class="ui column">
-                {{#if (eq equipo.a5estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a5link
+                actividad=equipo.a5estado
+                titulo="De cábalas y otras yerbas"
+                insignias="trabajo-colaborativo"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a6estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a6link
+                actividad=equipo.a6estado
+                titulo="El Mundial '78 en primera persona"
+                insignias="produccion-multimedia"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a7estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a7link
+                actividad=equipo.a7estado
+                titulo="El ranking de las proteínas"
+                insignias="gestion-de-informacion"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a8estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a8link
+                actividad=equipo.a8estado
+                titulo="Remix  Mundial"
+                insignias="produccion-audiovisual"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="ui inverted padded segment bg celeste">
+  <div class="ui inverted very padded segment bg celeste">
     <div class="ui container">
       <div class="ui grid">
-        <div class="ui four wide column">
+        <div class="ui four wide middle aligned column">
           <h1 class="ui center aligned white header">
             FASE<br>
             1
           </h1>
         </div>
-        <div class="ui twelve wide column">
+        <div class="ui twelve wide column left-side-border-white">
           <div class="ui two column grid">
-            <div class="ui column">
-                {{#if (eq equipo.a1estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a1link
+                actividad=equipo.a1estado
+                titulo="Mapa interactivo Rusia 2018"
+                insignias="produccion-multimedia"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a2estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a2link
+                actividad=equipo.a2estado
+                titulo="¡Hay equipo!"
+                insignias="estetica-y-diseno"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a3estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a3link
+                actividad=equipo.a3estado
+                titulo="Crónica: el Mundial en mi escuela"
+                insignias="produccion-escrita"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
-            <div class="ui column">
-                {{#if (eq equipo.a4estado "true")}}
-                <a class="ui card">
-                  OK
-                </a>
-                {{else}}
-                  FALTA
-                {{/if}}
+            <div class="ui column desafio-card">
+              {{ctic-tarjeta-desafio
+                link=equipo.a4link
+                actividad=equipo.a4estado
+                titulo="El campeón inesperado"
+                insignias="actuacion"
+                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
             </div>
           </div>
         </div>

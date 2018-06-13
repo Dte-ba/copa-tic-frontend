@@ -17,6 +17,16 @@ p {
   line-height: 40px;
 }
 
+.ui.affo-bold {
+  font-family: "Affogato-Bold";
+}
+.ui.affo-medium {
+  font-family: "Affogato-Medium";
+}
+.ui.affo-black {
+  font-family: "Affogato-Black";
+}
+
 .center {
   text-align: center;
 }
@@ -71,6 +81,10 @@ p {
 .bg.fuccia {
   background-color: #d70046 !important;
   color: #fff !important;
+}
+
+.verde-claro {
+  color: #a4c136;
 }
 
 /* Fonts */
@@ -185,6 +199,19 @@ p {
 .ui.vertical.segment.detalle-desafio .ui.ordered.list {
   font-size: 1.4em;
   line-height: 1.3em;
+}
+
+.juego-cards .ui.card {
+  border-radius: 0;
+  background-color: #f6f5f5;
+}
+
+.juego-cards .ui.card .ui.basic.button {
+  border-radius: 0;
+  background: #ffffff !important;
+  font-family: "Affogato-Bold";
+  text-transform: uppercase;
+  color: #1b2647 !important;
 }
 
 /* Home */

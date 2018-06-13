@@ -63,6 +63,10 @@ p {
   color: #d70046 !important;
 }
 
+.verde {
+  color: #a4c136 !important;
+}
+
 .bg.azul {
   background-color: #1b2647 !important;
   color: #fff !important;
@@ -154,6 +158,11 @@ p {
 
 .affo-medium {
   font-family: "Affogato-Medium";
+  font-weight: normal;
+}
+
+.affo-black {
+  font-family: "Affogato-Black";
   font-weight: normal;
 }
 
@@ -283,6 +292,25 @@ p {
   color: #fff;
 }
 
+.home-copa-tic .ui.statistic {
+  margin: 0 0.2em !important;
+  padding: 1em;
+  width: 150px !important;
+  min-height: 150px !important;
+}
+
+.home-copa-tic .ui.statistic .value {
+  font-family: "Affogato-Bold";
+  font-size: 3.5em !important;
+}
+.home-copa-tic .ui.statistic .label {
+  font-family: "Affogato-Regular";
+}
+.home-copa-tic .ui.statistic .value,
+.home-copa-tic .ui.statistic .label {
+  color: #fff;
+}
+
 .ui.vertical.segment.home_segui-de-cerca {
   background: transparent url("/assets/home/segui-de-cerca_bg.svg") no-repeat
     center center;
@@ -349,7 +377,7 @@ img.monocromo {
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
-  text-align: right;
+  text-align: center;
   padding-right: 7em;
 }
 
@@ -358,10 +386,12 @@ img.monocromo {
   height: 18px;
   background: #fff;
   opacity: 1;
+  border-radius: 0;
 }
 
 .swiper-pagination-bullet-active {
   background: #e1033c;
+  border-radius: 0;
 }
 /* Herramientas (Isotope) */
 

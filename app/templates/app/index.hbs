@@ -1,7 +1,7 @@
 {{outlet}}
 <div class="ui vertical stripe segment">
     {{#swiper-container pagination=true grabCursor=true navigation=true}}
-        {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_01.jpg" />{{/swiper-slide}}
+        {{#swiper-slide}}<img class="ui fluid image" src="/assets/slides/home_slide-01.jpg" />{{/swiper-slide}}
         {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_02.jpg" />{{/swiper-slide}}
         {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_03.jpg" />{{/swiper-slide}}
       {{/swiper-container}}
@@ -54,7 +54,7 @@
     <h1 class="ui center aligned header">
       <div class="ui content">
           <i class="ui small chevron right icon"></i>
-        <span class="affo-light">UN SOLO OBJETIVO:</span> <span class="affo-medium">LLENAR LA <b>#COPATIC</b></span>
+        <span class="affo-light">UN SOLO OBJETIVO:</span> <span class="affo-medium">LLENAR LA <b class="verde">#COPATIC</b></span>
       </div>
     </h1>
   </div>
@@ -62,7 +62,7 @@
 <div class="ui vertical stripe center aligned segment home-tablero" id="tablero">
   <h1 class="ui header bg fuccia">
     <img class="ui small image" src="/assets/home/icono-secundarias-blanco.svg">
-    <div class="content">
+    <div class="content affo-black">
       ENCONTRÁ TU ESCUELA EN EL TABLERO
     </div>
   </h1>
@@ -100,13 +100,62 @@
       {{/if}}
     {{/g-map}}
 </div>
-<div class="ui vertical center aligned segment">
-  <h1 class="ui icon header">
-    <div class="content">
-      <img class="ui fluid image" src="copa-tic_logo.png" />
+<div class="ui vertical center aligned very padded segment">
+  <div class="ui grid container">
+    <div class="ui six wide column">
+      <img class="ui medium image" src="/assets/copa-tic/copa-tic_0.svg" alt="Copa TIC - 0% Completa">
     </div>
-    <i class="ui massive trophy icon"></i>
-  </h1>
+    <div class="ui ten wide column">
+      <div class="ui grid">
+        <div class="row">
+          <div class="column">
+            <img class="ui small image" src="/assets/copa-tic_logo.png" alt="Copa TIC Logo">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="ui four statistics home-copa-tic">
+              <div class="ui middle aligned statistic bg celeste">
+                <div class="value">
+FASE 1
+                </div>
+                <div class="label">
+
+                </div>
+              </div>
+              <div class="ui statistic bg verde">
+                <div class="value">
+                  <img class="ui fluid image" src="/assets/iconos/icono_pelota-blanca.svg" alt="Ícono pelota de fútbol">
+                  50
+                </div>
+                <div class="label">
+                  PUNTOS
+                </div>
+              </div>
+              <div class="ui statistic bg verde">
+                <div class="value">
+                  <img class="ui fluid image" src="/assets/home/icono-desafios-blanco.svg" alt="Ícono desafíos">
+                  4
+                </div>
+                <div class="label">
+                  DESAFÍOS
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="eight wide column">
+            
+          </div>
+          <div class="eight wide column">
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 <div class="ui vertical stripe padded segment bg celeste">
   <img class="ui image" src="/assets/home/home_producciones-colectivas.svg" alt="Resumen semanal de desafíos - Producciones colectivas">

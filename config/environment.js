@@ -69,7 +69,7 @@ module.exports = function(environment) {
   }
 
   if (environment === "production") {
-    const default_api_url = "http://copatic-backend.enjambrelab.com.ar";
+    const default_api_url = "http://copatic-backend.dtelab.com.ar";
     ENV.API_URL = default_api_url;
   }
 

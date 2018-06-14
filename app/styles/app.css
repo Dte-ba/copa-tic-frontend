@@ -263,11 +263,13 @@ p {
 
 .home-resolve .ui.blue.statistics .statistic > .value,
 .home-resolve .ui.statistics .blue.statistic > .value,
-.home-resolve .ui.blue.statistic > .value {
+.home-resolve .ui.blue.statistic > .value,
+.ui.horizontal.statistic > .value {
   font-family: "Affogato-Black";
 }
 
-.home-resolve .ui.statistics .statistic > .label {
+.home-resolve .ui.statistics .statistic > .label,
+.ui.horizontal.statistic > .label {
   font-family: "Affogato-Light";
   font-weight: lighter;
   font-size: 2rem;
@@ -309,6 +311,12 @@ p {
 .home-copa-tic .ui.statistic .value,
 .home-copa-tic .ui.statistic .label {
   color: #fff;
+}
+
+.home-copa-tic .ui.avatar.image {
+  margin-right: 0;
+  width: auto;
+  border-radius: 0;
 }
 
 .ui.vertical.segment.home_segui-de-cerca {

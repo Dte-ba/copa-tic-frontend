@@ -1,3 +1,4 @@
+
 {{#if media.isMobile}}
   {{#if sidebarVisible}}
     <div class="bg-black-50 z-max fixed absolute--fill center" {{action "ocultarSidebar"}}>
@@ -12,10 +13,12 @@
   </a>
 
 {{else}}
+
+  <div class="ui fixed borderless top menu header-oficial"></div>
+
   {{#link-to "app.index" tagName="div" class="item logo-container" current-when="index"}}
     <img class="ui fluid image" src="/assets/copa-tic_logo-header.svg" alt="Copa TIC, la escuela juega el mundial"/>
   {{/link-to}}
   {{lista-de-rutas}}
 {{/if}}
-
 {{yield}}

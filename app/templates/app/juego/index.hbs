@@ -15,10 +15,12 @@
       “Copa TIC. La escuela juega el Mundial” es un juego educativo destinado a alumnos de 71 escuelas secundarias de la Provincia de Buenos Aires que consiste en resolver desafíos de manera colaborativa, poniendo en práctica contenidos escolares y competencias digitales, a fin de recolectar insignias y sumar la mayor cantidad de puntos posibles para ayudar a completar la Copa TIC.
     </p>
     <div class="ui right aligned basic segment">
-      <div class="ui large button">DESCARGAR INSTRUCCIONES <i class="ui download icon"></i></div>
+      <a class="ui large button" href="/assets/docs/CopaTIC_GuíaIntroductoria.pdf">GUÍA INTRODUCTORIA <i class="ui download icon"></i></a>
+      <a class="ui large button" href="/assets/docs/CopaTIC_Instrucciones_y_reglamento.pdf">INSTRUCCIONES Y REGLAMENTO <i class="ui download icon"></i></a>
     </div>
   </div>
 </div>
+{{#if (eq model.fase1.estado true)}}
 <div class="ui basic inverted very padded segment bg celeste">
   <div class="ui container">
     <h1 class="ui huge white header affo-medium">
@@ -80,6 +82,8 @@
     </div>
   </div>
 </div>
+{{/if}}
+{{#if (eq model.fase2.estado true)}}
 <div class="ui basic inverted very padded segment bg fuccia">
   <div class="ui container">
     <h1 class="ui huge white header affo-medium">
@@ -141,6 +145,8 @@
     </div>
   </div>
 </div>
+{{/if}}
+{{#if (eq model.fase3.estado true)}}
 <div class="ui basic inverted very padded segment bg verde">
   <div class="ui container">
     <h1 class="ui huge white header affo-medium">
@@ -202,6 +208,8 @@
     </div>
   </div>
 </div>
+{{/if}}
+{{#if (eq model.fase4.estado true)}}
 <div class="ui basic inverted very padded segment bg azul">
   <div class="ui container">
     <h1 class="ui huge white header affo-medium">
@@ -263,3 +271,4 @@
     </div>
   </div>
 </div>
+{{/if}}

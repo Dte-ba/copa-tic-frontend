@@ -487,6 +487,51 @@ img.monocromo {
   border-color: #1c1f4c !important;
 }
 
+.ctic-herramientas .ui.card {
+  border-radius: 0;
+}
+
+.ctic-herramientas .ui.card .content,
+.ctic-herramientas .ui.card .extra .content {
+  border-top: 0 !important;
+}
+
+.ctic-herramientas .ui.card .header a {
+  color: #009cde;
+  font-family: "Roboto";
+}
+
+.ctic-herramientas .ui.card .sub.header {
+  margin-top: 10px;
+  font-size: 0.6em;
+  color: #1c1f4c;
+  text-transform: uppercase;
+  font-family: "Roboto";
+}
+
+.ctic-herramientas .ui.card .description {
+  font-size: 1em;
+  font-family: "Roboto";
+  text-align: justify;
+}
+
+.ctic-herramientas .ui.card .meta {
+  font-size: 1em;
+  font-family: "Roboto";
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.ctic-herramientas .ui.card .meta .recursos,
+.ctic-herramientas .ui.card .meta .plataformas {
+  text-transform: uppercase;
+}
+
+.ctic-herramientas .ui.card .extra.content a {
+  color: #009cde;
+  font-family: "Roboto";
+}
+
 /* Footer */
 
 .ui.inverted.vertical.footer.segment {

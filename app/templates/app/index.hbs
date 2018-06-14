@@ -1,9 +1,22 @@
 {{outlet}}
+
+
 <div class="ui vertical stripe segment">
-    {{#swiper-container pagination=true grabCursor=true navigation=true}}
-        {{#swiper-slide}}<img class="ui fluid image" src="/assets/slides/home_slide-01.jpg" />{{/swiper-slide}}
-        {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_02.jpg" />{{/swiper-slide}}
-        {{#swiper-slide}}<img class="ui fluid image" src="slides/slide-placeholder_03.jpg" />{{/swiper-slide}}
+    {{#swiper-container pagination=true grabCursor=true navigation=true autoplay=true}}
+        {{#swiper-slide}}<img class="ui fluid image" src="/assets/slides/home_slide-01.jpg" alt="Poné a prueba tus conocimientos y competencias digitales"/>{{/swiper-slide}}
+
+        {{#if (eq model.fase1.estado true)}}
+          {{#swiper-slide}}<img class="ui fluid image" src="/assets/slides/home_slide-02.jpg" alt="Mirá los desafíos de la Fase 1"/>{{/swiper-slide}}
+        {{/if}}
+        {{#if (eq model.fase2.estado true)}}
+          {{#swiper-slide}}<img class="ui fluid image" src="/assets/slides/home_slide-03.jpg" alt="Mirá los desafíos de la Fase 2"/>{{/swiper-slide}}
+        {{/if}}
+        {{#if (eq model.fase3.estado true)}}
+          {{#swiper-slide}}<img class="ui fluid image" src="/assets/slides/home_slide-04.jpg" alt="Mirá los desafíos de la Fase 3"/>{{/swiper-slide}}
+        {{/if}}
+        {{#if (eq model.fase4.estado true)}}
+          {{#swiper-slide}}<img class="ui fluid image" src="/assets/slides/home_slide-05.jpg" alt="Mirá los desafíos de la Fase 4" />{{/swiper-slide}}
+        {{/if}}
       {{/swiper-container}}
 </div>
 <div class="ui vertical stripe segment home-a-jugar bg verde">
@@ -117,7 +130,7 @@
             <div class="ui four statistics home-copa-tic">
               <div class="ui middle aligned statistic bg celeste">
                 <div class="value">
-FASE 1
+                  FASE 1
                 </div>
                 <div class="label">
 

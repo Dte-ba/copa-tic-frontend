@@ -9,7 +9,11 @@ export default Ember.Route.extend({
     let insignias = this.store.findAll("insignia");
     return {
       escuela: escuela,
-      insignias: insignias
+      insignias: insignias,
+      fase1: this.store.findRecord("fase", 1),
+      fase2: this.store.findRecord("fase", 2),
+      fase3: this.store.findRecord("fase", 3),
+      fase4: this.store.findRecord("fase", 4)
     };
   }
 });

@@ -1,12 +1,12 @@
 <div class="column tarjeta-recurso {{acciones}} {{recursos}} {{plataformas}}">
-  <div class="ui fluid card">
+  <div class="ui fluid raised card">
     <div class="content">
       <div class="header">
         <a href="{{link}}" target="_blank" title="{{titulo}}">
           <img class="ui mini image" src="/assets/logos/{{icono}}.png" height="20"> {{titulo}}
         </a>
         <div class="sub header">
-          {{acciones}}
+          {{ctic-toolbox-card-acciones data=acciones}}
         </div>
       </div>
     </div>
@@ -16,8 +16,8 @@
       </div>
     </div>
     <div class="content">
-      <span class="meta">Recursos: {{recursos}}</span>
-      <span class="meta">Entorno: {{plataformas}}</span>
+      <span class="meta">Recursos: <span class="recursos">{{ctic-toolbox-card-recursos data=recursos}}</span></span><br>
+      <span class="meta">Entorno: <span class="plataformas">{{ctic-toolbox-card-plataformas data=plataformas}}</span></span>
     </div>
     <div class="extra content">
       <a href="{{guia}}" target="_blank" title="Guía de uso de {{titulo}}">Guía de uso</a>

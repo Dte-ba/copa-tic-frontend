@@ -1,7 +1,7 @@
 <div class="ui vertical stripe padded segment">
   <div class="ui container">
     <h1 class="ui huge dividing header">
-      Tablero {{log model}}
+      Tablero
     </h1>
     <h3 class="ui header">
       {{model.escuela.nombre}}
@@ -11,4 +11,4 @@
     </h5>
   </div>
 </div>
-  {{ctic-detalle-equipo equipos=model.escuela.equipos insignias=model.insignias}}
+  {{ctic-detalle-equipo model=model equipos=model.escuela.equipos insignias=model.insignias}}

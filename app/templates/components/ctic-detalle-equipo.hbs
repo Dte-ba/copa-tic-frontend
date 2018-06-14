@@ -9,10 +9,10 @@
               <span class="meta">Equipo {{eid-a-equipo eid=equipo.eid}}</span>
             </div>
             <div class="item">
-              <b>DT {{equipo.dt}}</b>
+              <b>DT {{#if equipo.dt}}{{equipo.dt}}{{else}}A DEFINIR{{/if}}</b>
             </div>
             <h2 class="item">
-              <b>{{equipo.nombre}}</b>
+              <b>{{#if equipo.nombre}}{{equipo.nombre}}{{else}}SIN NOMBRE{{/if}}</b>
             </h2>
           </div>
         </a>
@@ -54,6 +54,7 @@
       </div>
     </div>
   </div>
+{{#if (eq model.fase4.estado true)}}
   <div class="ui inverted very padded segment bg azul">
     <div class="ui container">
       <div class="ui grid">
@@ -102,6 +103,8 @@
       </div>
     </div>
   </div>
+{{/if}}
+{{#if (eq model.fase3.estado true)}}
   <div class="ui inverted very padded segment bg verde">
     <div class="ui container">
       <div class="ui grid">
@@ -150,6 +153,8 @@
       </div>
     </div>
   </div>
+{{/if}}
+{{#if (eq model.fase2.estado true)}}
   <div class="ui inverted very padded segment bg fuccia">
     <div class="ui container">
       <div class="ui grid">
@@ -198,6 +203,8 @@
       </div>
     </div>
   </div>
+{{/if}}
+{{#if (eq model.fase1.estado true)}}
   <div class="ui inverted very padded segment bg celeste">
     <div class="ui container">
       <div class="ui grid">
@@ -246,5 +253,6 @@
       </div>
     </div>
   </div>
+{{/if}}
 </div>
 {{/each}}

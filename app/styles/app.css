@@ -126,6 +126,7 @@ p {
   border: 0 !important;
   box-shadow: none !important;
   padding: 0.5em 2em;
+  border-bottom: 1px solid #aeb1a3 !important;
 }
 
 .barra-de-navegacion .ui.right.menu {
@@ -136,6 +137,7 @@ p {
 
 .logo-container {
   margin-right: 4em;
+  cursor: pointer;
 }
 
 .resumen {
@@ -175,9 +177,13 @@ p {
   height: 100%;
 }
 
+.uppercase {
+  text-transform: uppercase !important;
+}
+
 .affo-light {
-  font-family: "Affogato-Light";
-  font-weight: lighter;
+  font-family: "Affogato-Light" !important;
+  font-weight: lighter !important;
 }
 
 .affo-medium {
@@ -208,7 +214,7 @@ p {
 .ui.menu a.item.active,
 .ui.menu .active.item:hover {
   background: none;
-  color: #27aae2;
+  color: #a4c136;
 }
 
 .ui.fixed.menu {
@@ -352,6 +358,20 @@ p {
 }
 
 /* tablero */
+
+.tablero-header {
+  font-size: 3em !important;
+  margin: 0 !important;
+}
+
+.escuela {
+  margin: 0 !important;
+}
+
+.localidad {
+  text-transform: capitalize !important;
+  margin: 0 !important;
+}
 
 img.monocromo {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */

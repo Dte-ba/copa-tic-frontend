@@ -1,14 +1,19 @@
-<div class="ui vertical stripe padded segment">
+<div class="ui vertical stripe very padded segment">
   <div class="ui container">
-    <h1 class="ui huge dividing header">
+    <h1 class="tablero-header ui huge header affo-light uppercase">
       Tablero
     </h1>
-    <h3 class="ui header">
+    <h3 class="ui header uppercase affo-bold escuela">
       {{model.escuela.nombre}}
     </h3>
-    <h5 class="ui sub header">
+    <h5 class="ui sub header affo-medium localidad">
       {{model.escuela.localidad}}
     </h5>
   </div>
 </div>
-  {{ctic-detalle-equipo model=model equipos=model.escuela.equipos insignias=model.insignias}}
+{{#if model.escuela.equipos}}
+{{ctic-detalle-equipo model=model equipos=model.escuela.equipos insignias=model.insignias}}
+
+{{else}}
+  <div class="ui active big loader"></div>
+{{/if}}

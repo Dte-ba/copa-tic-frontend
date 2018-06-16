@@ -1,4 +1,5 @@
 {{outlet}}
+{{ctic-scrollto id=id}}
 
 
 <div class="ui vertical stripe segment">
@@ -100,6 +101,7 @@
     </div>
   </h1>
   <!-- Mapa -->
+    <div id='mapa'></div>
     {{#g-map lat=-36.0317071 lng=-59.7663028 zoom=6.5 as |context|}}
       {{#if model.listaDeEscuelas.isFinished}}
         {{#each model.listaDeEscuelas.value.data as |e|}}

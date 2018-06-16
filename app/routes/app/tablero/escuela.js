@@ -10,10 +10,11 @@ export default Ember.Route.extend({
     return {
       escuela: escuela,
       insignias: insignias,
-      fase1: this.store.findRecord("fase", 1),
-      fase2: this.store.findRecord("fase", 2),
-      fase3: this.store.findRecord("fase", 3),
-      fase4: this.store.findRecord("fase", 4)
+      fase0: this.store.findRecord("fase", 1),
+      fase1: this.store.findRecord("fase", 2),
+      fase2: this.store.findRecord("fase", 3),
+      fase3: this.store.findRecord("fase", 4),
+      fase4: this.store.findRecord("fase", 5)
     };
   }
 });

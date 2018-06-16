@@ -1,7 +1,5 @@
 {{outlet}}
 {{ctic-scrollto id=id}}
-
-
 <div class="ui vertical stripe segment">
     {{#swiper-container pagination=true grabCursor=true navigation=true autoplay=true}}
         {{#swiper-slide}}
@@ -97,11 +95,10 @@
   <h1 class="ui header bg fuccia">
     <img class="ui small image" src="/assets/home/icono-secundarias-blanco.svg">
     <div class="content affo-black">
-      ENCONTRÁ TU ESCUELA EN EL TABLERO
+      ENCONTRÁ TU ESCUELA Y ACCEDÉ AL TABLERO
     </div>
   </h1>
   <!-- Mapa -->
-    <div id='mapa'></div>
     {{#g-map lat=-36.0317071 lng=-59.7663028 zoom=6.5 as |context|}}
       {{#if model.listaDeEscuelas.isFinished}}
         {{#each model.listaDeEscuelas.value.data as |e|}}
@@ -117,17 +114,21 @@
                 </h2>
                 <div class="ui equal width grid">
                   {{#each e.equipos as |equipo|}}
-                  <div class="column">
+                  <div class="column infowindow-equipo">
                     <span class="meta">Equipo {{eid-a-equipo eid=equipo.eid}}</span>
                     <h5 class="ui header">
-                      {{equipo.dt}}
+                      DT: {{#if equipo.dt}}{{equipo.dt}}{{else}}SIN DEFINIR{{/if}}
                     </h5>
                     <h4 class="ui header">
-                      {{equipo.nombre}}
+                      {{#if equipo.nombre}}{{equipo.nombre}}{{else}}SIN NOMBRE{{/if}}
+                    </h4>
+                    <h4 class="ui header">
+                      Insignias ganadas: {{equipo.totalDeInsigniasGanadas}}
                     </h4>
                   </div>
                   {{/each}}
                 </div>
+                {{#link-to 'app.tablero.escuela' e.id class="ui bottom attached fluid button bg verde"}}VER TABLERO{{/link-to}}
               </div>
             {{/g-map-infowindow}}
           {{/g-map-marker}}
@@ -142,8 +143,10 @@
     <img class="ui fluid image" src="/assets/home/banner-copa-fase-3.jpg" alt="Copa TIC - 75% Completa">
   {{else if (eq model.fase2.estado true)}}
     <img class="ui fluid image" src="/assets/home/banner-copa-fase-2.jpg" alt="Copa TIC - 50% Completa">
-  {{else if (eq model.fase1.estado true)}}
-    <img class="ui fluid image" src="/assets/home/banner-copa-fase-1.jpg" alt="Copa TIC - 25% Completa">
+  {{else if (and (eq model.fase1.estado true) (eq model.fase0.estado true))}}
+    <img class="ui fluid image" src="/assets/home/banner-copa-fase-0.jpg" alt="Copa TIC - 0% Completa">
+  {{else if (and (eq model.fase1.estado true) (eq model.fase0.estado false))}}
+    <img class="ui fluid image" src="/assets/home/banner-copa-fase-1.jpg" alt="Copa TIC - 0% Completa">
   {{/if}}
 </div>
 <div class="ui vertical stripe padded segment bg celeste">

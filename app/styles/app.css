@@ -115,7 +115,7 @@ p {
 /* General */
 
 .ui.menu .header-oficial {
-  background: #aac037 url("/assets/header-oficial.svg") top right no-repeat !important;
+  background: #9aca3c url("/assets/header-oficial.svg") top right no-repeat !important;
   height: 70px;
   border: 0 !important;
   box-shadow: none !important;
@@ -198,8 +198,38 @@ p {
 
 .infowindow-segment {
   min-width: 500px;
+  border: 0 !important;
+}
+.infowindow-segment .ui.header {
+  font-family: "Affogato-Bold";
+}
+.infowindow-segment .ui.header a {
+  color: #1c1f4c;
+}
+.infowindow-segment .ui.header .ui.sub.header {
+  color: #1c1f4c;
+  font-family: "Affogato-Medium";
 }
 
+.infowindow-equipo {
+  border: 1px solid #1c1f4c;
+  padding: 0 !important;
+  margin: 2em 0.2em;
+}
+.infowindow-equipo .meta {
+  display: block;
+  font-family: "Affogato-Medium";
+  background-color: #1c1f4c;
+  color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.infowindow-equipo .ui.header {
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+}
 /* Menu */
 
 .ui.menu {

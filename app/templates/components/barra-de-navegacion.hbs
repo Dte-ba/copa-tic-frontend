@@ -16,7 +16,7 @@
 
   <div class="ui fixed borderless top menu header-oficial"></div>
 
-  {{#link-to "app.index" tagName="div" class="item logo-container" current-when="index"}}
+  {{#link-to "app.index" (query-params id="") tagName="div" class="item logo-container" current-when="index"}}
     <img class="ui fluid image" src="/assets/copa-tic_logo-header.svg" alt="Copa TIC, la escuela juega el mundial"/>
   {{/link-to}}
   {{lista-de-rutas}}

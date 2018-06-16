@@ -1,11 +1,12 @@
 {{#if media.isDesktop}}
-  {{#link-to "app.index" class="item large screen only"}}
+  {{#link-to "app.index" (query-params id="") class="item large screen only"}}
     <img class="ui fluid image" src="copa-tic_menu-logo.png" />
   {{/link-to}}
 {{/if}}
 {{#link-to 'app.proyecto' class="item"}}Proyecto{{/link-to}}
 {{#link-to 'app.juego' class="item"}}Juego{{/link-to}}
-{{#link-to 'app.index' class="item"}}Mapa{{/link-to}}
+{{#link-to 'app.index' (query-params id="mapa") class="item"}}Mapa{{/link-to}}
+{{#link-to 'app.tablero' class="item"}}Tablero{{/link-to}}
 {{#link-to 'app.herramientas' class="item"}}Herramientas{{/link-to}}
 <a class="item verde" href="http://campus.abc.gov.ar/dte/" target="_blank">Aula virtual</a>
 <div class="ui borderless right menu">

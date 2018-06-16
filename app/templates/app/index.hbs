@@ -92,7 +92,7 @@
     </h1>
   </div>
 </div>
-<div class="ui vertical stripe center aligned segment home-tablero" id="tablero">
+<div class="ui vertical stripe center aligned segment home-tablero" id="mapa">
   <h1 class="ui header bg fuccia">
     <img class="ui small image" src="/assets/home/icono-secundarias-blanco.svg">
     <div class="content affo-black">
@@ -104,7 +104,7 @@
       {{#if model.listaDeEscuelas.isFinished}}
         {{#each model.listaDeEscuelas.value.data as |e|}}
 
-          {{#g-map-marker context group="escuela" lat=e.latitud lng=e.longitud icon='http://maps.google.com/mapfiles/ms/icons/green-dot.png' as |markerContext|}}
+          {{#g-map-marker context group="escuela" lat=e.latitud lng=e.longitud icon='/assets/iconos/green-dot.png' as |markerContext|}}
             {{#g-map-infowindow markerContext openOn="click" closeOn="click"}}
               <div class="ui segment infowindow-segment">
                 <h2 class="ui header">
@@ -134,77 +134,15 @@
     {{/g-map}}
 </div>
 <div class="ui vertical center aligned very padded segment">
-  <div class="ui grid container">
-    <div class="ui six wide column">
-      <img class="ui medium image" src="/assets/copa-tic/copa-tic_0.svg" alt="Copa TIC - 0% Completa">
-    </div>
-    <div class="ui ten wide column">
-      <div class="ui grid">
-        <div class="row">
-          <div class="column">
-            <img class="ui small image" src="/assets/copa-tic_logo.png" alt="Copa TIC Logo">
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <div class="ui four statistics home-copa-tic">
-              <div class="ui middle aligned statistic bg celeste">
-                <div class="value">
-                  FASE 1
-                </div>
-                <div class="label">
-
-                </div>
-              </div>
-              <div class="ui statistic bg verde">
-                <div class="value">
-                  <img class="ui fluid image" src="/assets/iconos/icono_pelota-blanca.svg" alt="Ícono pelota de fútbol">
-                  50
-                </div>
-                <div class="label">
-                  PUNTOS
-                </div>
-              </div>
-              <div class="ui statistic bg verde">
-                <div class="value">
-                  <img class="ui fluid image" src="/assets/home/icono-desafios-blanco.svg" alt="Ícono desafíos">
-                  4
-                </div>
-                <div class="label">
-                  DESAFÍOS
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="eight wide column">
-            <div class="ui horizontal statistic">
-              <div class="value">
-                <img class="ui avatar image" src="/assets/home/icono-secundarias.svg" alt="71 secundarias"> 71
-              </div>
-              <div class="label">
-                secundarias
-              </div>
-            </div>
-          </div>
-          <div class="eight wide column">
-            <div class="eight wide column">
-              <div class="ui horizontal statistic">
-                <div class="value">
-                  <img class="ui avatar image" src="/assets/iconos/icono_pelota.svg" alt="71 secundarias"> 20
-                </div>
-                <div class="label">
-                  insignias
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
+  {{#if (eq model.fase4.estado true)}}
+    <img class="ui fluid image" src="/assets/home/banner-copa-fase-4.jpg" alt="Copa TIC - 100% Completa">
+  {{else if (eq model.fase3.estado true)}}
+    <img class="ui fluid image" src="/assets/home/banner-copa-fase-3.jpg" alt="Copa TIC - 75% Completa">
+  {{else if (eq model.fase2.estado true)}}
+    <img class="ui fluid image" src="/assets/home/banner-copa-fase-2.jpg" alt="Copa TIC - 50% Completa">
+  {{else if (eq model.fase1.estado true)}}
+    <img class="ui fluid image" src="/assets/home/banner-copa-fase-1.jpg" alt="Copa TIC - 25% Completa">
+  {{/if}}
 </div>
 <div class="ui vertical stripe padded segment bg celeste">
   <img class="ui image" src="/assets/home/home_producciones-colectivas.svg" alt="Resumen semanal de desafíos - Producciones colectivas">

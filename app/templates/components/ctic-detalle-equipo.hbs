@@ -41,12 +41,12 @@
             </div>
           </h1>
         </div>
-        <div class="ui twelve wide column">
+        <div class="ui twelve wide column insignias-tablero">
           <div class="ui seven column grid">
             {{#each equipo.insignias_ganadas as |insignia|}}
 
-                <div class="column">
-                  <img class="ui tiny {{if insignia.tiene '' 'disabled monocromo'}} image" src="/assets/insignias/{{insignia.nombre}}.svg" alt="{{insignia.nombre}}">
+                <div class="column insignia">
+                  <img class="ui fluid {{if insignia.tiene '' 'disabled monocromo'}} image" src="/assets/insignias/{{insignia.nombre}}.svg" alt="{{insignia.nombre}}">
                 </div>
             {{/each}}
           </div>
@@ -72,7 +72,7 @@
                 actividad=equipo.a13estado
                 titulo="El gol animado"
                 insignias="programacion"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Animación realizada en Scratch de uno de los goles de la Selección Argentina en el Mundial Rusia 2018."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -80,7 +80,7 @@
                 actividad=equipo.a14estado
                 titulo="Medios, fútbol y discriminación"
                 insignias="evaluacion-y-seleccion-de-medios-y-tecnologia, interpretacion-textual"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Prácticas y sugerencias de alumnos secundarios para garantizar la inclusión, el respeto y la convivencia en el fútbol."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -88,7 +88,7 @@
                 actividad=equipo.a15estado
                 titulo="El Mundial de los datos"
                 insignias=""
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Los jugadores hacen competir a los países que participan del Mundial a partir de indicadores del Banco Mundial."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -96,7 +96,7 @@
                 actividad=equipo.a16estado
                 titulo="Los estadios a través de la historia"
                 insignias=""
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Línea de tiempo que muestra cómo han sido utilizados los estadios por distintas civilizaciones a lo largo de la historia."}}
             </div>
           </div>
         </div>
@@ -122,7 +122,7 @@
                 actividad=equipo.a9estado
                 titulo="¿A qué jugamos?"
                 insignias=""
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Resultados de la encuesta realizada para conocer a qué deportes jugan los estudiantes de la escuela y cuáles siguen por los medios. "}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -130,7 +130,7 @@
                 actividad=equipo.a10estado
                 titulo="Al ritmo del Mundial"
                 insignias="produccion-sonora"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Relato sonoro que narra de manera distinta la historia y características de uno de los países que disputan la Copa del Mundo."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -138,7 +138,7 @@
                 actividad=equipo.a11estado
                 titulo="El fútbol en mi barrio"
                 insignias="produccion-fotografica"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="En esta cuenta de Instagram los estudiantes nos cuentan cómo se vive el fútbol en sus barrios para que conozcamos mejor la Provincia."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -146,7 +146,7 @@
                 actividad=equipo.a12estado
                 titulo="Campaña contra la discriminación de género en el fútbol"
                 insignias="participacion-en-redes-sociales"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Imágenes que reflejan prácticas discriminatorias hacia las mujeres en el ámbito futbolístico."}}
             </div>
           </div>
         </div>
@@ -172,7 +172,7 @@
                 actividad=equipo.a5estado
                 titulo="De cábalas y otras yerbas"
                 insignias="trabajo-colaborativo"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="A través de un audio, los jugadores le explican a un extranjero qué son las cábalas y describen una que practican, en lengua inglesa."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -180,7 +180,7 @@
                 actividad=equipo.a6estado
                 titulo="El Mundial '78 en primera persona"
                 insignias="produccion-multimedia"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Este tablero de Pinterest contiene relatos de familiares de los jugadores que vivieron el Mundial de 1978 y configuran una narración colectiva en primera persona."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -188,7 +188,7 @@
                 actividad=equipo.a7estado
                 titulo="El ranking de las proteínas"
                 insignias="gestion-de-informacion"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Los jugadores hacen competir a los países que participan del Mundial a partir del nivel proteico de sus platos tradicionales."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -196,7 +196,7 @@
                 actividad=equipo.a8estado
                 titulo="Remix  Mundial"
                 insignias="produccion-audiovisual"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Video elaborado a partir del poema 'Nunca Jamás' del relator Walter Saavedra que refleja la pasión de los argentinos por el fútbol."}}
             </div>
           </div>
         </div>
@@ -222,7 +222,7 @@
                 actividad=equipo.a1estado
                 titulo="Mapa interactivo Rusia 2018"
                 insignias="produccion-multimedia"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="El Mundial Rusia 2018 se jugará en 12 estadios distribuídos en 11 ciudades. Para conocerlos en detalle, los alumnos realizaron un mapa interactivo con todas las sedes."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -230,7 +230,7 @@
                 actividad=equipo.a2estado
                 titulo="¡Hay equipo!"
                 insignias="estetica-y-diseno"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="En este desafío, los jugadores diseñaron el escudo y escogieron el nombre de su equipo, a partir de los elementos que los identifican a ellos y a la escuela."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -238,7 +238,7 @@
                 actividad=equipo.a3estado
                 titulo="Crónica: el Mundial en mi escuela"
                 insignias="produccion-escrita"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="A través de una crónica, las y los estudiantes cuentan cómo se vive el mundial en sus escuelas."}}
             </div>
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
@@ -246,7 +246,7 @@
                 actividad=equipo.a4estado
                 titulo="El campeón inesperado"
                 insignias="actuacion"
-                descripcion="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dapibus in neque ut cursus. Praesent bibendum vitae quam a faucibus."}}
+                descripcion="Los jugadores imaginan qué pasaría si un país con pocas probabilidades ganara la final de la Copa del Mundo, y lo narran a través de un relato radial. "}}
             </div>
           </div>
         </div>

@@ -242,7 +242,40 @@ p {
 
 .juego-cards .ui.card {
   border-radius: 0;
-  background-color: #f6f5f5;
+  background-color: #ffffff;
+}
+
+.juego-cards .ui.card > .content > .header {
+  font-size: 1.1em !important;
+  min-height: 38px;
+}
+.juego-cards .ui.card > .content > .header,
+.juego-cards .ui.card > .content > .description {
+  font-family: "Affogato-Bold";
+}
+.juego-cards .ui.card > .content > .description {
+  text-align: center;
+  margin-top: 0 !important;
+  margin-bottom: 1.5em;
+}
+.juego-cards .ui.card > .content > .description > .ui.tiny.image {
+  width: 60px;
+  padding-top: 2em;
+}
+
+.puntos {
+  color: #7ba300;
+  border-right: 2px solid #7ba300;
+  padding-right: 0.4em;
+  margin-right: 0.4em;
+  font-weight: bold;
+  font-size: 1.4em;
+  height: 70px;
+}
+
+.puntos.sin-insignia {
+  margin-left: 3.5em;
+  border-right: 0;
 }
 
 .juego-cards .ui.card .ui.basic.button {
@@ -422,9 +455,24 @@ img.monocromo {
   border-radius: 0;
 }
 
+.ui.column.desafio-card .header {
+  font-family: "Affogato-Bold";
+}
+
+.ui.column.desafio-card .description {
+  font-family: "Roboto-Light";
+}
+
 .ui.disabled.card {
   height: 150px;
   opacity: 0.2;
+}
+
+.insignias-tablero .column.insignia {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* Slider */

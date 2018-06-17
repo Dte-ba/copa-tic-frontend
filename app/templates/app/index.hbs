@@ -45,8 +45,8 @@
 </div>
 <div class="ui vertical stripe padded segment home-resolve">
   <div class="ui center aligned container">
-    <div class="ui four huge blue statistics">
-      <div class="ui statistic">
+    <div class="ui three huge blue statistics">
+      <!-- <div class="ui statistic">
         <div class="value">
           <img class="ui fluid image" src="/assets/home/icono-estudiantes.svg" alt="1800 estudiantes">
           1800
@@ -54,7 +54,7 @@
         <div class="label">
           estudiantes
         </div>
-      </div>
+      </div> -->
       <div class="ui statistic">
         <div class="value">
           <img class="ui fluid image" src="/assets/home/icono-secundarias.svg" alt="71 secundarias">
@@ -136,7 +136,7 @@
       {{/if}}
     {{/g-map}}
 </div>
-<div class="ui vertical center aligned very padded segment">
+<div class="ui vertical center aligned very padded segment" id="copa-tic">
   {{#if (eq model.fase4.estado true)}}
     <img class="ui fluid image" src="/assets/home/banner-copa-fase-4.jpg" alt="Copa TIC - 100% Completa">
   {{else if (eq model.fase3.estado true)}}

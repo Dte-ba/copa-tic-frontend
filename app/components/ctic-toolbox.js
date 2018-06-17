@@ -6,7 +6,7 @@ export default Ember.Component.extend({
     // external js: isotope.pkgd.js
 
     // init Isotope
-    var $grid = Ember.$(".grid").isotope({
+    var $grid = Ember.$(".grid.tools").isotope({
       itemSelector: ".tarjeta-recurso"
     });
 

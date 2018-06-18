@@ -9,19 +9,19 @@ module.exports = function(environment) {
     locationType: "auto",
     contentSecurityPolicy: {
       "connect-src":
-        "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+        "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar' 'copatic.abc.gov.ar'",
       "style-src":
-        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar' 'copatic.abc.gov.ar'",
       "script-src":
-        "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+        "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar' 'copatic.abc.gov.ar'",
       "frame-src":
-        "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+        "'self' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar' 'copatic.abc.gov.ar'",
       "font-src":
-        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar' 'copatic.abc.gov.ar'",
       "media-src":
-        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'",
+        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar' 'copatic.abc.gov.ar'",
       "img-src":
-        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar'"
+        "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar' 'copatic.abc.gov.ar'"
     },
 
     EmberENV: {

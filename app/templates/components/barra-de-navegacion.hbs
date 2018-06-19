@@ -1,8 +1,9 @@
 
-{{#if media.isMobile}}
+{{#if (or media.isMobile media.isTablet)}}
+  {{log "Mobile"}}
   {{#if sidebarVisible}}
     <div class="bg-black-50 z-max fixed absolute--fill center" {{action "ocultarSidebar"}}>
-      <div class="ui fixed inverted vertical menu" style="bottom: 0" {{action "ocultarSidebar"}}>
+      <div class="ui fixed inverted vertical menu bg verde" style="bottom: 0" {{action "ocultarSidebar"}}>
         {{lista-de-rutas}}
       </div>
     </div>
@@ -13,7 +14,7 @@
   </a>
 
 {{else}}
-
+  {{log "Desktop"}}
   <div class="ui fixed borderless top menu header-oficial"></div>
 
   {{#link-to "app.index" (query-params id="") tagName="div" class="item logo-container" current-when="index"}}

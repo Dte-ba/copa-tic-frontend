@@ -42,6 +42,10 @@ Router.map(function() {
       this.route("equipo", { path: "equipo/:equipo_id" });
     });
     this.route("herramientas");
+
+    this.route('dnm', function() {
+      this.route('exportar');
+    });
   });
   this.route('tablero');
   this.route('juego');

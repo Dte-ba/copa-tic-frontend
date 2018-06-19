@@ -5,7 +5,7 @@ export default Ember.Service.extend({
 
   inicializar() {
     this.set("activado", true);
-    ga("create", "UA-98624597-2", "auto");
+    ga("create", "UA-120900673-1", "auto");
   },
 
   notifificarTransicion(ruta) {

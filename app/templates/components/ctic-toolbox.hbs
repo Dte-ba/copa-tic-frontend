@@ -45,7 +45,6 @@
             <button class="ui compact button" data-filter=".videos">Videos</button>
             <button class="ui compact button" data-filter=".presentaciones">Presentaciones</button>
             <button class="ui compact button" data-filter=".infografias">Infografías</button>
-            <button class="ui compact button" data-filter=".cuestionarios">Cuestionarios</button>
           </div>
         </div>
         <!-- Plataforma -->
@@ -64,7 +63,7 @@
 </div>
 <div class="ui inverted segment bg celeste ctic-herramientas">
   <div class="ui container">
-    <div class="ui four column grid tools">
+    <div class="ui {{if (or media.isMobile media.isTablet) 'two' 'four'}} column grid tools">
       {{ctic-toolbox-card
         titulo="Scratch"
         descripcion="Lenguaje de programación creado por el MIT que sirve para crear historias interactivas, juegos y animaciones que pueden ser compartidas con otras personas vía Web."

@@ -1,5 +1,5 @@
-<div class="Site-content ctic-container">
-  <div class="ui fixed borderless menu barra-de-navegacion">
+<div class="Site-content {{if (or media.isMobile media.isTablet) 'ctic-container-mobile' 'ctic-container'}}">
+  <div class="ui fixed borderless menu {{if (or media.isMobile media.isTablet) 'barra-de-navegacion-mobile' 'barra-de-navegacion'}}">
     {{barra-de-navegacion}}
   </div>
   {{outlet}}

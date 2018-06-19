@@ -17,6 +17,10 @@ p {
   line-height: 40px;
 }
 
+.z-max {
+  z-index: 10000;
+}
+
 .ui.affo-bold {
   font-family: "Affogato-Bold";
 }
@@ -121,8 +125,24 @@ p {
   box-shadow: none !important;
 }
 
+.ui.menu .header-oficial-mobile {
+  background: #9aca3c url("/assets/header-oficial.svg") center right no-repeat !important;
+  height: 30px;
+  border: 0 !important;
+  box-shadow: none !important;
+  background-size: cover !important;
+}
+
 .barra-de-navegacion {
   top: 70px !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0.5em 2em;
+  border-bottom: 1px solid #aeb1a3 !important;
+}
+
+.barra-de-navegacion-mobile {
+  top: 30px !important;
   border: 0 !important;
   box-shadow: none !important;
   padding: 0.5em 2em;
@@ -150,6 +170,10 @@ p {
 
 .ctic-container {
   margin-top: 9em;
+}
+
+.ctic-container-mobile {
+  margin-top: 6.7em;
 }
 
 .Site {

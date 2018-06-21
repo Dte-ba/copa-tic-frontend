@@ -56,6 +56,10 @@ Router.map(function() {
     });
     this.route("herramientas");
   });
+  this.route("tablero");
+  this.route("juego");
+  this.route("proyecto");
+  this.route("herramientas");
 });
 
 export default Router;

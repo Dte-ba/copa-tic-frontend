@@ -60,6 +60,7 @@ Router.map(function() {
   this.route("juego");
   this.route("proyecto");
   this.route("herramientas");
+  this.route('copa');
 });
 
 export default Router;

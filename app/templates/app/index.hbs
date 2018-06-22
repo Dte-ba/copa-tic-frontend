@@ -136,7 +136,7 @@
       {{/if}}
     {{/g-map}}
 </div>
-<div class="ui vertical center aligned very padded segment" id="copa-tic">
+<div class="ui vertical center aligned very padded segment">
   {{#if (eq model.fase4.estado true)}}
     <img class="ui fluid image" src="/assets/home/banner-copa-fase-4.jpg" alt="Copa TIC - 100% Completa">
   {{else if (eq model.fase3.estado true)}}
@@ -148,6 +148,7 @@
   {{else if (and (eq model.fase1.estado true) (eq model.fase0.estado false))}}
     <img class="ui fluid image" src="/assets/home/banner-copa-fase-1.jpg" alt="Copa TIC - 0% Completa">
   {{/if}}
+  <div  id="copa"></div>
 </div>
 <div class="ui vertical stripe padded segment bg celeste">
   <img class="ui image" src="/assets/home/home_producciones-colectivas.svg" alt="Resumen semanal de desafíos - Producciones colectivas">

@@ -192,6 +192,10 @@ p {
 }
 /* Mapa */
 
+#mapa {
+  min-height: 665px;
+}
+
 .g-map {
   height: 600px;
 }

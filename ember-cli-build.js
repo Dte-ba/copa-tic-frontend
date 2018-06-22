@@ -24,6 +24,7 @@ module.exports = function(defaults) {
   app.import("vendor/isotope.pkgd.min.js");
   app.import("vendor/imagesloaded.pkgd.min.js");
   app.import("vendor/Affogato-Webfont/affogato.css");
+  app.import("vendor/ga.js");
 
   return app.toTree();
 };

@@ -5,10 +5,9 @@ export default Ember.Component.extend({
   didInsertElement() {
     if (this.id) {
       let element = $(`#${this.id}`);
-
       if (element) {
         element[0].scrollIntoView();
-        window.scrollBy(0, -150);
+        window.scrollBy(0, -130);
       }
     }
   }

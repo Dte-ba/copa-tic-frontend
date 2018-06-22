@@ -24,6 +24,8 @@ module.exports = function(environment) {
         "'self' 'unsafe-inline' 'http://localhost:4200' 'copatic.enjambrelab.com.ar' 'copatic.abc.gob.ar' 'copatic.abc.gov.ar'"
     },
 
+    analytics_key: "UA-120900673-1",
+
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

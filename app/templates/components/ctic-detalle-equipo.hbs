@@ -54,7 +54,7 @@
       </div>
     </div>
   </div>
-{{#if (eq model.fase4.estado true)}}
+{{#if (eq model.fase5.estado true)}}
   <div class="ui inverted very padded segment bg azul">
     <div class="ui container">
       <div class="ui grid">
@@ -65,7 +65,7 @@
           </h1>
         </div>
         <div class="ui twelve wide column left-side-border-white">
-          <div class="ui {{if (or media.isMobile media.isTablet) 'one' 'two'}}  column stackable grid">
+          <div class="ui {{if (or media.isMobile media.isTablet) 'one' 'two'}} column stackable grid">
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
                 link=equipo.a13link
@@ -104,7 +104,7 @@
     </div>
   </div>
 {{/if}}
-{{#if (eq model.fase3.estado true)}}
+{{#if (eq model.fase4.estado true)}}
   <div class="ui inverted very padded segment bg verde">
     <div class="ui container">
       <div class="ui grid">
@@ -115,7 +115,7 @@
           </h1>
         </div>
         <div class="ui twelve wide column left-side-border-white">
-          <div class="ui {{if (or media.isMobile media.isTablet) 'one' 'two'}}  column stackable grid">
+          <div class="ui {{if (or media.isMobile media.isTablet) 'one' 'two'}} column stackable grid">
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
                 link=equipo.a9link
@@ -154,7 +154,7 @@
     </div>
   </div>
 {{/if}}
-{{#if (eq model.fase2.estado true)}}
+{{#if (eq model.fase3.estado true)}}
   <div class="ui inverted very padded segment bg fuccia">
     <div class="ui container">
       <div class="ui grid">
@@ -165,7 +165,7 @@
           </h1>
         </div>
         <div class="ui twelve wide column left-side-border-white">
-          <div class="ui {{if (or media.isMobile media.isTablet) 'one' 'two'}}  column stackable grid">
+          <div class="ui {{if (or media.isMobile media.isTablet) 'one' 'two'}} column stackable grid">
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
                 link=equipo.a5link
@@ -204,7 +204,7 @@
     </div>
   </div>
 {{/if}}
-{{#if (eq model.fase1.estado true)}}
+{{#if (or (eq model.fase2.estado true) (eq model.fase0.estado true))}}
   <div class="ui inverted very padded segment bg celeste">
     <div class="ui container">
       <div class="ui grid">
@@ -215,7 +215,7 @@
           </h1>
         </div>
         <div class="ui twelve wide column left-side-border-white">
-          <div class="ui {{if (or media.isMobile media.isTablet) 'one' 'two'}}  column stackable grid">
+          <div class="ui {{if (or media.isMobile media.isTablet) 'one' 'two'}} column stackable grid">
             <div class="ui column desafio-card">
               {{ctic-tarjeta-desafio
                 link=equipo.a1link

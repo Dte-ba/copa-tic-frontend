@@ -21,7 +21,8 @@ export default Ember.Route.extend({
       fase1: this.store.findRecord("fase", 2),
       fase2: this.store.findRecord("fase", 3),
       fase3: this.store.findRecord("fase", 4),
-      fase4: this.store.findRecord("fase", 5)
+      fase4: this.store.findRecord("fase", 5),
+      fase5: this.store.findRecord("fase", 6)
       // listaDeEscuelas: this.get("escuelas").perform()
     };
   }

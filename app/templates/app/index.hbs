@@ -137,7 +137,9 @@
     {{/g-map}}
 </div>
 <div class="ui vertical center aligned very padded segment">
-  {{#if (eq model.fase4.estado true)}}
+  {{#if (eq model.fase5.estado true)}}
+    <img class="ui fluid image" src="/assets/home/banner-copa-final.jpg" alt="Copa TIC - 100% Completa">
+  {{else if (eq model.fase4.estado true)}}
     <img class="ui fluid image" src="/assets/home/banner-copa-fase-4.jpg" alt="Copa TIC - 100% Completa">
   {{else if (eq model.fase3.estado true)}}
     <img class="ui fluid image" src="/assets/home/banner-copa-fase-3.jpg" alt="Copa TIC - 75% Completa">

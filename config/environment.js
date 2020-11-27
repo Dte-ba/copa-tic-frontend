@@ -45,7 +45,8 @@ module.exports = function(environment) {
 
   ENV["g-map"] = {
     libraries: ["places"],
-    key: "AIzaSyA7X7s7nDGTf4LicQh4vU-KZP3ptWGp1e0"
+    // key: "AIzaSyA7X7s7nDGTf4LicQh4vU-KZP3ptWGp1e0"
+    key: "AIzaSyDgcyvgvlGCW9U9izgVu3nkiIxbVJy6r-M"
   };
 
   const default_api_url = "http://localhost:8000";
@@ -71,7 +72,7 @@ module.exports = function(environment) {
   }
 
   if (environment === "production") {
-    const default_api_url = "http://copatic-backend.dtelab.com.ar";
+    const default_api_url = "http://copatic-backend.enjambrelab.com.ar";
     ENV.API_URL = default_api_url;
   }
 
